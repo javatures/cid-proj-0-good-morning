@@ -4,11 +4,35 @@
 package good.morning;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Greeting greeting = new Greeting();
+        System.out.println(greeting.getGreeting());
+
+        System.out.println("Here's what you've got on your plate at the moment:")
+
+        System.out.println("")
+        System.out.println("*Displays list of tasks*");
+
+        // *** Transform the comments below into code one feature at a time. ***
+        // *** The comments below depict a potential UX flow. **
+        // *** Working on them in "chronological order" is likely not the best approach. ***
+
+        // As a Tutorial, the User is presented the Daily Backlog that contains 3 Tasks :
+        // - Task 1
+        //     - User modifies Task Name
+        //     - User marks Task as Complete
+        // - Task 2
+        //     - User Cancels Task
+        // - Task 3
+        //     - User assigns a Context
+        //         - Context options are: Live, Learn, Earn, Love        
+        //     - User indicates Task as Top Of Mind
+
+        // User is then presented the Top Of Mind:
+        // - The Top Of Mind displays the Top Of Mind Task from each Context (FOUR Tasks total)
+        //     - There can only be ONE Top Of Mind Task per Context
+
+        // User is returned to 
     }
 }
