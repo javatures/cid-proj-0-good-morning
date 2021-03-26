@@ -11,8 +11,8 @@ public class App {
         System.out.println("Program starting...");
         System.out.println("");
         
-        Bud bud = new Bud();
-        System.out.println(bud.saysHi());
+        Steve steve = new Silly();
+        System.out.println(steve.saysHi());
 
         System.out.println("");    
         System.out.println("\"Here's what you've got on your plate at the moment:\"");
@@ -55,7 +55,7 @@ public class App {
         */
 
         System.out.println("");
-        System.out.println(bud.saysFarewell());
+        System.out.println(steve.saysFarewell());
         System.out.println("");
         
         System.out.println("");

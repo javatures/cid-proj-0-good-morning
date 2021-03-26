@@ -1,21 +1,10 @@
 package good.morning;
 
 /**
- * This Bud is the User's guide through the program.
+ * Bud is a generic, interactive guide for users through the program- each implementation has its own personality.
  */
 
-public class Bud {
-
-    String hi = "\"Remember- every great day starts with a good morning!\"";
-
-    String saysHi() {
-        return hi;
-    }
-
-    String farewell = "\"Farewell!\"";
-
-    String saysFarewell() {
-        return farewell;
-    }
-    
+public interface Bud {
+    String saysHi();
+    String saysFarewell();
 }

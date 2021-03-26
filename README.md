@@ -15,9 +15,14 @@ Earning is the only place here that you don't wanna take an L- but even if you d
 
 * * *
 
+## Dev Backlog
+- [ ] Implement multiple interfaces
+- [ ] Use all access modifiers
+
+
 ## Features
 - [ ] **Daily** backlog
-	- [ ] Create **Tasks**
+	- [ ] Create **Tasks** ***hash maps!!!***
 		- [ ] ~~Automatically store "Creation Date"~~ 
 			- Removed feature above to keep app *timeless*
 		- [ ] Add one "Context" (Live, Learn, Earn, Love) to a "Task"

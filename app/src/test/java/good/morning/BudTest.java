@@ -4,17 +4,12 @@
 package good.morning;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
-class BudTest {
+public interface BudTest {
 
-    Bud testBud = new Bud();
+    @Test
+    String testSaysHi();
 
-    @Test void testSaysHi() {
-        assertNotNull(testBud.saysHi(), "Bud should have said Hi");
-    }
-
-    @Test void testSaysFarewell() {
-        assertNotNull(testBud.saysFarewell(), "Bud should have said Farewell");
-    }
+    @Test
+    String testSaysFarewell();
 }
