@@ -6,33 +6,60 @@ package good.morning;
 public class App {
 
     public static void main(String[] args) {
-        Greeting greeting = new Greeting();
-        System.out.println(greeting.getGreeting());
+        
+        System.out.println("");    
+        System.out.println("Program starting...");
+        System.out.println("");
+        
+        Bud bud = new Bud();
+        System.out.println(bud.saysHi());
 
-        System.out.println("Here's what you've got on your plate at the moment:")
+        System.out.println("");    
+        System.out.println("\"Here's what you've got on your plate at the moment:\"");
+        System.out.println("");
 
-        System.out.println("")
+        System.out.println("");
         System.out.println("*Displays list of tasks*");
+        System.out.println("");
 
-        // *** Transform the comments below into code one feature at a time. ***
-        // *** The comments below depict a potential UX flow. **
-        // *** Working on them in "chronological order" is likely not the best approach. ***
+        /*
+        # UX Flow / Dev Backlog
 
-        // As a Tutorial, the User is presented the Daily Backlog that contains 3 Tasks :
-        // - Task 1
-        //     - User modifies Task Name
-        //     - User marks Task as Complete
-        // - Task 2
-        //     - User Cancels Task
-        // - Task 3
-        //     - User assigns a Context
-        //         - Context options are: Live, Learn, Earn, Love        
-        //     - User indicates Task as Top Of Mind
+        *** Transform the comments below into code one feature at a time. ***
+        *** The comments below depict a potential UX flow. ***
+        *** Working on them in "chronological order" is likely not the best approach. ***
 
-        // User is then presented the Top Of Mind:
-        // - The Top Of Mind displays the Top Of Mind Task from each Context (FOUR Tasks total)
-        //     - There can only be ONE Top Of Mind Task per Context
+        ## As a Tutorial, the User is presented the Daily Backlog that contains THREE Tasks
 
-        // User is returned to 
+        - Task ONE
+            - User modifies Task Name
+            - User marks Task as Complete
+        - Task TWO
+            - User Cancels Task
+        - Task THREE
+            - User assigns a Context
+                - Context options are: Live, Learn, Earn, Love        
+            - User indicates Task as Top Of Mind
+
+        ## User is then presented the Top Of Mind
+
+        - The Top Of Mind displays the Top Of Mind Task from each Context (FOUR Tasks total)
+            - There can only be ONE Top Of Mind Task per Context
+
+        ## User is returned to Daily Backlog
+
+        - User creates THREE Tasks- ONE for each remaining Context
+
+        ## User Exits the program
+
+        */
+
+        System.out.println("");
+        System.out.println(bud.saysFarewell());
+        System.out.println("");
+        
+        System.out.println("");
+        System.out.println("Program ending...");
+        System.out.println("");
     }
 }
