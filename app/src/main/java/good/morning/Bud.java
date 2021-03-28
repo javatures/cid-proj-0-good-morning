@@ -5,6 +5,7 @@ package good.morning;
  */
 
 public interface Bud {
-    String saysHi();
+
+    void saysHi(Greeting bud);
     String saysFarewell();
 }

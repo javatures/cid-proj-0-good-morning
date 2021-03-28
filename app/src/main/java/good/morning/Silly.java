@@ -8,9 +8,9 @@ public class Silly extends Steve {
     String mood = "Silly";
 
     @Override
-    public String saysHi() {
+    public void saysHi(Greeting greeting) {
         String hi = "Remember- every great day starts with a good morning!";
-        return hi;
+        greeting.perform();
     }
 
     @Override

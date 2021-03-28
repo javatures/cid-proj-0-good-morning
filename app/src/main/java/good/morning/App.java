@@ -12,7 +12,13 @@ public class App {
         System.out.println("");
         
         Steve steve = new Silly();
-        System.out.println(steve.saysHi());
+        
+        // Use print statement below if reverting back away from functional interface (Greeting)
+        // System.out.println(steve.saysHi());
+
+        // Print statement for use of function interface (Greting)
+        Greeting lambdaGreeting = () -> System.out.println("Hi");
+
 
         System.out.println("");    
         System.out.println("\"Here's what you've got on your plate at the moment:\"");

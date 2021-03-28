@@ -18,7 +18,8 @@ Earning is the only place here that you don't wanna take an L- but even if you d
 ## Dev Backlog
 - [ ] Implement multiple interfaces
 - [ ] Use all access modifiers
-
+- [ ] Use lambdas & streams
+- [ ] Use anonymous classes
 
 ## Features
 - [ ] **Daily** backlog
@@ -36,7 +37,8 @@ Earning is the only place here that you don't wanna take an L- but even if you d
 	- [ ] "cap"
 		- [ ] An ambiguous task that serves as a reminder for user to tie up any "loose ends" from completed "Tasks"
 
-
+## Fridge
+- [ ] Version of Steve that only speaks pig latin
 
 
 
