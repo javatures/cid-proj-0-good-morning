@@ -6,18 +6,5 @@ package good.morning;
  */
 
 public abstract class Steve implements Bud {
-
-    private String name = "Steve";
-
-    public String getName() {
-        return this.name;
-    }
-
-    String introducesSelf() {
-        return "Hi, my name is " + name;
-    }
-
-    abstract String expressesSelf();
-
-    
+        static String steveGreetingSilly = "Remember- every great day starts with a good morning!";
 }

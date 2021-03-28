@@ -6,6 +6,6 @@ package good.morning;
 
 public interface Bud {
 
-    void saysHi(Greeting bud);
-    String saysFarewell();
+    public void sayHi(Greeting greeting);
+    // String saysFarewell();
 }

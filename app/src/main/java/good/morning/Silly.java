@@ -5,28 +5,26 @@ package good.morning;
  */
 
 public class Silly extends Steve {
-    String mood = "Silly";
 
     @Override
-    public void saysHi(Greeting greeting) {
-        String hi = "Remember- every great day starts with a good morning!";
+    public void sayHi(Greeting greeting) {
         greeting.perform();
     }
 
-    @Override
-    public String saysFarewell() {
-        String farewell = "See ya later alli... gotcha!";
-        return farewell;
-    }
+    // @Override
+    // public String saysFarewell() {
+    //     String farewell = "See ya later alli... gotcha!";
+    //     return farewell;
+    // }
 
-    @Override
-    public String introducesSelf() {
+    // @Override
+    // public String introducesSelf() {
         
-        return "Hi, my name is " + getName() + "!";
-    }
+    //     return "Hi, my name is " + getName() + "!";
+    // }
 
-    String expressesSelf() {
-        String expression = "How 'bout a joke? \nWhy'd the chicken cross the road? \nOh, you've heard that one before...";
-        return expression;
-    }
+    // String expressesSelf() {
+    //     String expression = "How 'bout a joke? \nWhy'd the chicken cross the road? \nOh, you've heard that one before...";
+    //     return expression;
+    // }
 }
