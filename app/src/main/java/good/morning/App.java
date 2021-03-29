@@ -3,6 +3,8 @@
  */
 package good.morning;
 
+import java.util.ArrayList;
+
 public class App {
 
     public static void main(String[] args) {
@@ -11,7 +13,23 @@ public class App {
         System.out.println("Program starting...");
         System.out.println("");
         
+        System.out.println("");    
+        System.out.println("Setup starting...");
+        System.out.println("");
+
         Silly steve = new Silly();
+        ArrayList<BacklogItem> daily = new ArrayList<>();
+
+        // Genesis block
+        String[] genesisTasks = {"don't forget steve", "support javatures"};
+        BacklogItem genesisBacklogItem = new BacklogItem(0, genesisTasks);
+
+        System.out.println(genesisBacklogItem.getBacklogItemHash());
+
+        String[] backlogItem1Tasks = {"make a discord \"steve\" bot", "make a javatures avatar"};
+        BacklogItem backlogItem1Task1 = new BacklogItem(genesisBacklogItem.getBacklogItemHash(), backlogItem1Tasks);
+
+        System.out.println(backlogItem1Task1.getBacklogItemHash());
 
         // Lambda Greeting
 

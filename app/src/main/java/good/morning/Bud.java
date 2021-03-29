@@ -8,4 +8,5 @@ public interface Bud {
 
     public void sayHi(Greeting greeting);
     // String saysFarewell();
+
 }
