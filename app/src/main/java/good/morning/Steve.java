@@ -6,5 +6,5 @@ package good.morning;
  */
 
 public abstract class Steve implements Bud {
-        static String steveGreetingSilly = "Remember- every great day starts with a good morning!";
+        public static String greetingSilly = "Remember- every great day starts with a good morning!";
 }

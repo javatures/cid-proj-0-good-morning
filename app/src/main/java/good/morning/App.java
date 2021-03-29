@@ -15,8 +15,7 @@ public class App {
 
         // Lambda Greeting
 
-        steve.sayHi(() -> System.out.println(Steve.steveGreetingSilly));
-
+        steve.sayHi(() -> System.out.println(Steve.greetingSilly));
 
         System.out.println("");    
         System.out.println("\"Here's what you've got on your plate at the moment:\"");
