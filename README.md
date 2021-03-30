@@ -15,30 +15,14 @@ Earning is the only place here that you don't wanna take an L- but even if you d
 
 * * *
 
-## Dev Backlog
-- [ ] Implement multiple interfaces
-- [ ] Use all access modifiers
-- [ ] Use lambdas & streams
-- [ ] Use anonymous classes
-
 ## Features
-- [ ] **Daily** backlog
-	- [ ] Create **Tasks** ***hash maps!!!***
-		- [ ] ~~Automatically store "Creation Date"~~ 
-			- Removed feature above to keep app *timeless*
-		- [ ] Add one "Context" (Live, Learn, Earn, Love) to a "Task"
-		- [ ] Add a "Priority" switch (boolean)
-			- [ ] Users are restricted to one "Priority Task" per "Context"
-	- [ ] "Top Of Mind" view
-		- [ ] View/Manage "Priority Task" from each "Context" separate from rest of "Daily" backlog
-- [ ] "Weekly Re-" view
-	- [ ] "flection"
-		- [ ] View completed "Tasks" from previous seven "Daily" backlogs
-	- [ ] "cap"
-		- [ ] An ambiguous task that serves as a reminder for user to tie up any "loose ends" from completed "Tasks"
+- [ ] Daily Backlog
+  - [ ] Assign 1 of 4 Contexts (Live, Learn, Earn, Love)
+  - [x] Create Tasks table
+    - [x] Select Task records
+    - [x] Insert Task records
 
 ## Fridge
 - [ ] Version of Steve that only speaks pig latin
-
-
-
+- [ ] good-night
+- [ ] good-move

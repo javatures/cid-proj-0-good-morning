@@ -3,81 +3,70 @@
  */
 package good.morning;
 
-import java.util.ArrayList;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
-public class App {
-
-    public static void main(String[] args) {
-        
+public class App
+{    
+    public String getGreeting()
+    {
+        return "Hello, World!";
+    }
+    public static void main(String[] args) throws SQLException
+    {
         System.out.println("");    
         System.out.println("Program starting...");
         System.out.println("");
-        
-        System.out.println("");    
-        System.out.println("Setup starting...");
-        System.out.println("");
 
-        Silly steve = new Silly();
-        ArrayList<BacklogItem> daily = new ArrayList<>();
+        // Connect to the server
+        try
+        {
+            String url = "jdbc:postgresql://localhost:5432/postgres";
+            String user = "postgres";
+            String password = "password";
+            Connection connection = DriverManager.getConnection(url, user, password);
+            Statement statement = connection.createStatement();
+            
+            String sqlCreateTasks = "DROP TABLE IF EXISTS tasks CASCADE;" +
+                                    "CREATE TABLE tasks " +
+                                    "(id int PRIMARY KEY," +
+                                    " name varchar(255) NOT NULL);";
+            
+            System.out.println("");
+            System.out.println("Creating Tasks...");
+            System.out.println("");                        
 
-        // Genesis block
-        String[] genesisTasks = {"don't forget steve", "support javatures"};
-        BacklogItem genesisBacklogItem = new BacklogItem(0, genesisTasks);
+            int rowCount = statement.executeUpdate(sqlCreateTasks);
+            System.out.println(rowCount + " rows affected.");
 
-        System.out.println(genesisBacklogItem.getBacklogItemHash());
+            String sqlInsertTask = "INSERT INTO tasks " +
+                                   "VALUES (1, 'Test Task 1');";
+            
+            System.out.println("");
+            System.out.println("Inserting task records...");
+            System.out.println("");
+            
+            rowCount = statement.executeUpdate(sqlInsertTask);
+            System.out.println(rowCount + " rows affected.");
+            
+            String sqlSelectAllTasks = "SELECT * FROM tasks;";
+            System.out.println("");
+            System.out.println("Selecting all records from Tasks...");
+            System.out.println("");
 
-        String[] backlogItem1Tasks = {"make a discord \"steve\" bot", "make a javatures avatar"};
-        BacklogItem backlogItem1Task1 = new BacklogItem(genesisBacklogItem.getBacklogItemHash(), backlogItem1Tasks);
-
-        System.out.println(backlogItem1Task1.getBacklogItemHash());
-
-        // Lambda Greeting
-
-        steve.sayHi(() -> System.out.println(Steve.greetingSilly));
-
-        System.out.println("");    
-        System.out.println("\"Here's what you've got on your plate at the moment:\"");
-        System.out.println("");
-
-        System.out.println("");
-        System.out.println("*Displays list of tasks*");
-        System.out.println("");
-
-        /*
-        # UX Flow / Dev Backlog
-
-        *** Transform the comments below into code one feature at a time. ***
-        *** The comments below depict a potential UX flow. ***
-        *** Working on them in "chronological order" is likely not the best approach. ***
-
-        ## As a Tutorial, the User is presented the Daily Backlog that contains THREE Tasks
-
-        - Task ONE
-            - User modifies Task Name
-            - User marks Task as Complete
-        - Task TWO
-            - User Cancels Task
-        - Task THREE
-            - User assigns a Context
-                - Context options are: Live, Learn, Earn, Love        
-            - User indicates Task as Top Of Mind
-
-        ## User is then presented the Top Of Mind
-
-        - The Top Of Mind displays the Top Of Mind Task from each Context (FOUR Tasks total)
-            - There can only be ONE Top Of Mind Task per Context
-
-        ## User is returned to Daily Backlog
-
-        - User creates THREE Tasks- ONE for each remaining Context
-
-        ## User Exits the program
-
-        */
-
-        // System.out.println("");
-        // System.out.println(steve.saysFarewell());
-        // System.out.println("");
+            ResultSet resultSet = statement.executeQuery(sqlSelectAllTasks);
+            while (resultSet.next())
+            {
+              System.out.println("ID: " + resultSet.getInt("id"));
+              System.out.println("Name: " + resultSet.getString("name"));  
+            }
+        } catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
         
         System.out.println("");
         System.out.println("Program ending...");
