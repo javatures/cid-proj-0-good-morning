@@ -28,6 +28,15 @@ public class App
             String user = "postgres";
             String password = "password";
             Connection connection = DriverManager.getConnection(url, user, password);
+
+            if(connection != null)
+            {
+                System.out.println("Connection OK!");
+            } else
+            {
+                System.out.println("Connection FAILED!");
+            }
+
             Statement statement = connection.createStatement();
             
             String sqlCreateTasks = "DROP TABLE IF EXISTS tasks CASCADE;" +
