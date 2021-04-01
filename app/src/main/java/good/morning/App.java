@@ -5,75 +5,50 @@ package good.morning;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
-public class App
-{    
-    public String getGreeting()
-    {
+import model.Task;
+import model.TaskDao;
+
+public class App {    
+    public String getGreeting() {
         return "Hello, World!";
     }
-    public static void main(String[] args) throws SQLException
-    {
+    public static void main(String[] args) throws SQLException {
         System.out.println("");    
         System.out.println("Program starting...");
         System.out.println("");
 
-        // Connect to the server
-        try
-        {
-            String url = "jdbc:postgresql://localhost:5432/postgres";
-            String user = "postgres";
-            String password = "password";
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch(ClassNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+        
+        String url = "jdbc:postgresql://localhost:5432/project0";
+        String user = "project0";
+        String password = "password";
+
+        try {
             Connection connection = DriverManager.getConnection(url, user, password);
+            TaskDao taskDao = new TaskDao(connection);
 
-            if(connection != null)
-            {
-                System.out.println("Connection OK!");
-            } else
-            {
-                System.out.println("Connection FAILED!");
+            Task taskOne = new Task(0, "LIVE", "Task One");
+            taskDao.insert(taskOne);
+            
+            List<Task> taskList = new ArrayList<>();
+            taskList = taskDao.getAll();
+
+            System.out.println("");
+            System.out.println("Syso outside WHILE loop:");
+
+            for (Task task : taskList) {
+                System.out.println(task.getName());
             }
 
-            Statement statement = connection.createStatement();
-            
-            String sqlCreateTasks = "DROP TABLE IF EXISTS tasks CASCADE;" +
-                                    "CREATE TABLE tasks " +
-                                    "(id int PRIMARY KEY," +
-                                    " name varchar(255) NOT NULL);";
-            
-            System.out.println("");
-            System.out.println("Creating Tasks...");
-            System.out.println("");                        
-
-            int rowCount = statement.executeUpdate(sqlCreateTasks);
-            System.out.println(rowCount + " rows affected.");
-
-            String sqlInsertTask = "INSERT INTO tasks " +
-                                   "VALUES (1, 'Test Task 1');";
-            
-            System.out.println("");
-            System.out.println("Inserting task records...");
-            System.out.println("");
-            
-            rowCount = statement.executeUpdate(sqlInsertTask);
-            System.out.println(rowCount + " rows affected.");
-            
-            String sqlSelectAllTasks = "SELECT * FROM tasks;";
-            System.out.println("");
-            System.out.println("Selecting all records from Tasks...");
-            System.out.println("");
-
-            ResultSet resultSet = statement.executeQuery(sqlSelectAllTasks);
-            while (resultSet.next())
-            {
-              System.out.println("ID: " + resultSet.getInt("id"));
-              System.out.println("Name: " + resultSet.getString("name"));  
-            }
-        } catch(SQLException e)
-        {
+        } catch(SQLException e) {
             e.printStackTrace();
         }
         
