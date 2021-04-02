@@ -6,27 +6,19 @@ package good.morning;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
-import model.Task;
+import org.apache.logging.log4j.Logger;
+
 import model.TaskDao;
 
 public class App {    
-    public String getGreeting() {
-        return "Hello, World!";
-    }
     public static void main(String[] args) throws SQLException {
-        System.out.println("");    
+        System.out.println("***");    
         System.out.println("Program starting...");
         System.out.println("");
-
-        try {
-            Class.forName("org.postgresql.Driver");
-        } catch(ClassNotFoundException e) {
-            System.out.println(e.getMessage());
-        }
         
+        Logger log = org.apache.logging.log4j.LogManager.getLogger(App.class.getName());
+
         String url = "jdbc:postgresql://localhost:5432/project0";
         String user = "project0";
         String password = "password";
@@ -35,25 +27,35 @@ public class App {
             Connection connection = DriverManager.getConnection(url, user, password);
             TaskDao taskDao = new TaskDao(connection);
 
-            Task taskOne = new Task(0, "LIVE", "Task One");
-            taskDao.insert(taskOne);
+            // Task taskOne = new Task(0, "LIVE", "Task One");
+            // taskDao.insert(taskOne);
             
-            List<Task> taskList = new ArrayList<>();
-            taskList = taskDao.getAll();
+            // List<Task> taskList = new ArrayList<>();
+            // taskList = taskDao.getAll();
 
-            System.out.println("");
-            System.out.println("Syso outside WHILE loop:");
+            // System.out.println("HEADSPACE:");
+            // System.out.println("");
+            // taskList.forEach(task -> System.out.println(task.getName()));
 
-            for (Task task : taskList) {
-                System.out.println(task.getName());
-            }
+            // taskDao.rethink(4);
+
+            // Optional<Task> match = taskList.stream().filter(task -> task.getContext().equals("LIVE")).findFirst();
+            // if (match.isPresent())
+            //     System.out.println(match.get());
+
+            taskDao.headspace();
+            taskDao.bottomLine();
+            taskDao.sideNote();
+            taskDao.frontAndCenter();
+            taskDao.backBurner();
+            taskDao.topOfMind();
 
         } catch(SQLException e) {
-            e.printStackTrace();
+            log.error(e.getMessage());
         }
         
         System.out.println("");
         System.out.println("Program ending...");
-        System.out.println("");
+        System.out.println("***");
     }
 }

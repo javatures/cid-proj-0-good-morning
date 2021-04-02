@@ -2,7 +2,7 @@
 
 A young task management program that aspires to one day be a full grown Linux distribution.
 
-## App: Good Morning
+## App: ~~Good~~ Ghud Morning
 Words by Steve, words to live by:
 
 ***Because every great day starts with a good morning.***
@@ -17,29 +17,38 @@ Earning is the only place here that you don't wanna take an L- but even if you d
 * * *
 
 ## Features
-- [ ] Daily Backlog
+- [ ] Headspace
   - [x] Assign 1 of 4 Contexts (Live, Learn, Earn, Love)
-  - [x] Create Tasks
-    - [x] Insert Task
-    - [ ] Insert 2 or more Tasks
-  - [x] Read Tasks
-    - [x] Select all Tasks
-    - [ ] Select Tasks by Context
-  - [ ] Update Tasks
-    - [ ] Update Task name
-    - [ ] Update Task context
-  - [ ] Delete Tasks
-    - [ ] Delete Task
-  - [ ] Restore Tasks
-    - [ ] Restore deleted Task
+  - [x] Create ~~Tasks~~Thoughts    
+  - [x] Insert ~~Task~~ Thought
+    - [ ] Insert 2 or more ~~Tasks~~ Thoughts in one command
+  - [x] Read ~~Tasks~~ Thoughts
+    - [x] Select all ~~Tasks~~ Thoughts
+    - [x] Select ~~Tasks~~ Thoughts by Context
+      - [x] LOVE: Bottom Line
+      - [x] LEARN: Side Note
+      - [x] LIVE: Front And Center
+      - [x] EARN: Back Burner
+  - [x] Update ~~Tasks~~ Thoughts
+    - [x] Update ~~Task~~ Thought name
+    - [x] Update ~~Task~~ Thought context
+  - [ ] Delete ~~Tasks~~ Thoughts
+    - [ ] Delete ~~Task~~ Thought
+  - [ ] Restore ~~Tasks~~ Thoughts
+    - [ ] Restore deleted ~~Task~~ Thought
 - [ ] Steve Assistant
+- [ ] Select Thoughts by Priority
+  - [ ] Top Of Mind
+    - [ ] View Top Of Mind Thoughts
+    - [ ] Restrict Top Of Mind to ONE Thought per Context
 
 ## Fridge
 - [ ] Version of Steve that only speaks pig latin
-- [ ] good-night (sleep)
-- [ ] good-move (running)
-- [ ] good-call (phonebook)
-- [ ] good-hands (disappearing task force)
+- [ ] ~~good~~ ghud-night (sleep)
+- [ ] ~~good~~ ghud-move (running)
+- [ ] ~~good~~ ghud-call (phonebook)
+- [ ] ~~good~~ ghud-hands (disappearing task force)
+- [ ] ~~good~~ ghud-music (something music-based)
 
 ## Per Javatures GitHub Notes Repo
 

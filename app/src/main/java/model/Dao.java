@@ -2,6 +2,10 @@ package model;
 
 import java.util.List;
 
+/**
+ * The Dao interface manages database-entity interaction.
+ */
+
 public interface Dao<Entity> {
     void insert(Entity entity);
     List<Entity> getAll();
