@@ -1,4 +1,4 @@
-package good.morning.controller;
+package good.morning.model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,9 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import good.morning.model.Task;
-
 public class TaskDao implements Dao<Task> {
+    
     Connection connection;
 
     List<Task> headspace = new ArrayList<>();
@@ -182,8 +181,9 @@ public class TaskDao implements Dao<Task> {
             System.out.println();
             System.out.println("-----------------------------------------------------------------------------");
             System.out.println();
-            for(Task task : headspace) {
-                System.out.format("%-5.5s %-10.10s %-15.15s %-50.50s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+            for (Task task : headspace) {
+                System.out.format("%-5.5s %-10.10s %-15.15s %-50.50s", task.getId(), task.getContext(),
+                        task.getPriority(), task.getName());
                 System.out.println();
             }
             System.out.println("");
@@ -194,6 +194,52 @@ public class TaskDao implements Dao<Task> {
 
             for (int i = 0; i < headerAsByteArray.length; i++)
                 footer[i] = headerAsByteArray[headerAsByteArray.length - i - 1];
+            System.out.println();
+            System.out.println(new String(footer));
+            System.out.println("");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return headspace;
+    }
+
+    public List<Task> getGhud() {
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks;");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String context = resultSet.getString("context");
+                String name = resultSet.getString("name");
+                String priority = resultSet.getString("priority");
+
+                Task task = new Task(id, context, name, priority);
+                headspace.add(task);
+            }
+            String header = "ghuD:";
+            System.out.println(header);
+            System.out.println("");
+
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.printf("%-5.5s %-10.10s %-20.20s %-100.100s", "id", "frame", "priority", "name");
+            System.out.println();
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+
+            for (Task task : headspace) {
+                System.out.format("%-5.5s %-10.10s %-20.20s %-100.100s", task.getId(),
+                        task.getContext(), task.getPriority(), task.getName());
+                System.out.println();
+            }
+            System.out.println("");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            byte[] headerAsByteArray = header.getBytes();
+            byte[] footer = new byte[headerAsByteArray.length];
+            System.out.println("-------------------------------------------------------------------------------------------------");
+
+            for (int i = 0; i < headerAsByteArray.length; i++)
+                footer[i] = headerAsByteArray[headerAsByteArray.length - i - 1];
+            System.out.println();
             System.out.println(new String(footer));
             System.out.println("");
         } catch (SQLException e) {
@@ -216,20 +262,20 @@ public class TaskDao implements Dao<Task> {
                 Task task = new Task(id, context, name, priority);
                 topOfMind.add(task);
             }
-            String header = "TOP OF MIND:";
-            System.out.println(header);
+
+            System.out.println("TOP OF MIND:");
             System.out.println("");
 
-            topOfMind.forEach(task -> System.out.println(task.getName()));
-            System.out.println("");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.printf("%-5.5s %-10.10s %-100.100s", "id", "frame", "name");
+            System.out.println();
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
 
-            byte[] headerAsByteArray = header.getBytes();
-            byte[] footer = new byte[headerAsByteArray.length];
-
-            for (int i = 0; i < headerAsByteArray.length; i++)
-                footer[i] = headerAsByteArray[headerAsByteArray.length - i - 1];
-            System.out.println(new String(footer));
-            System.out.println("");
+            for(Task task : topOfMind) {
+                System.out.printf("%-5.5s %-10.10s %-100.100s", task.getId(), task.getContext(), task.getName());
+                System.out.println();
+            }            
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -303,16 +349,32 @@ public class TaskDao implements Dao<Task> {
     }
 
     @Override
-    public void insert(Task task) {
+    public void insert() {
+
+        Scanner userInput = new Scanner(System.in);
+
         try {
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("INSERT INTO tasks (context, name) VALUES (?, ?, ?)");
-            preparedStatement.setString(1, task.getContext());
-            preparedStatement.setString(2, task.getName());
-            preparedStatement.setString(3, task.getPriority());
+                    .prepareStatement("INSERT INTO tasks (context, name, priority) VALUES (?, ?, ?)");
+            
+            System.out.println("What frame of mind are we in?");
+            System.out.println();
+            String newTaskContext = userInput.nextLine();
+            System.out.println();
+            System.out.println("What's your Thought?");
+            String newTaskName = userInput.nextLine();
+            System.out.println();
+            System.out.println("How important is this Thought?");
+            String newTaskPriority = userInput.nextLine();
+
+            preparedStatement.setString(1, newTaskContext);
+            preparedStatement.setString(2, newTaskName);
+            preparedStatement.setString(3, newTaskPriority);
             int rowCount = preparedStatement.executeUpdate();
 
             System.out.println("Affected rows: " + rowCount);
+
+            userInput.close();
 
         } catch (SQLException e) {
             e.printStackTrace();

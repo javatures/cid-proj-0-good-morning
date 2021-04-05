@@ -1,0 +1,4 @@
+[INFO ] 2021-04-05 09:14:42.025 [main] App - This is information message
+[ERROR] 2021-04-05 09:14:42.028 [main] App - This is error message
+[WARN ] 2021-04-05 09:14:42.028 [main] App - This is warning message
+[FATAL] 2021-04-05 09:14:42.029 [main] App - This is fatal message

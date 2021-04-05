@@ -1,4 +1,4 @@
-package good.morning.controller;
+package good.morning.model;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import java.util.List;
  */
 
 public interface Dao<Entity> {
-    void insert(Entity entity);
+    void insert();
     List<Entity> getAll();
     void update(Entity entity);
     void delete(Entity entity);
