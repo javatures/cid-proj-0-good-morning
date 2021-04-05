@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Properties;
 import java.util.Scanner;
 
@@ -25,23 +26,28 @@ public class App {
 
     public static void main(String[] args) {
         
-        logger.info("Establishing database connection");
-        Properties properties = new Properties();
         try {
-            inputStream = new FileInputStream("database.properties");
-            logger.info("Retrieved database properties successfully: " + inputStream.toString());
-        } catch (FileNotFoundException e) {
-            logger.error("Error while retrieving database properties: " + e.getMessage());
-            e.printStackTrace();
-        }
-        try {
-            properties.load(inputStream);
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
 
-        try {
-            Connection connection = DriverManager.getConnection(properties.getProperty("url"), properties.getProperty("user"), properties.getProperty("password"));
+            Properties properties = new Properties();
+            logger.info("Retrieving database properties");
+            try {
+                inputStream = new FileInputStream("database.properties");
+                logger.info("Retrieved database properties successfully");
+            } catch (FileNotFoundException e) {
+                logger.error("Error while retrieving database properties: " + e.getMessage());
+                e.printStackTrace();
+            }
+            try {
+                properties.load(inputStream);
+                logger.info("Loaded database properties successfully");
+            } catch (IOException e) {
+                logger.error("Error while loading database properties: " + e.getMessage());
+                e.printStackTrace();
+            }
+    
+            Connection connection;
+            logger.info("Establishing database connection");
+            connection = DriverManager.getConnection(properties.getProperty("url"), properties.getProperty("user"), properties.getProperty("password"));
             TaskDao taskDao = new TaskDao(connection);
 
             boolean on = true;

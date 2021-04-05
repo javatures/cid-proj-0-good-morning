@@ -1,3 +1,6 @@
-
-[INFO ] 2021-04-05 12:00:41.272 [main] App - Establishing database connection
-[INFO ] 2021-04-05 12:00:41.275 [main] App - Retrieved database properties successfully: java.io.FileInputStream@4c5ae43b
+[INFO ] 2021-04-05 12:21:54.832 [main] App - Establishing database connection
+[INFO ] 2021-04-05 12:21:54.834 [main] App - Retrieved database properties successfully: java.io.FileInputStream@4c5ae43b
+[INFO ] 2021-04-05 14:00:07.012 [main] App - Retrieving database properties
+[INFO ] 2021-04-05 14:00:07.015 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-05 14:00:07.015 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-05 14:00:07.016 [main] App - Establishing database connection
