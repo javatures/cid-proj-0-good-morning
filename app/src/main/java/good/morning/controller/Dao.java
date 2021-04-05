@@ -1,4 +1,4 @@
-package model;
+package good.morning.controller;
 
 import java.util.List;
 

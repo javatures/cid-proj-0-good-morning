@@ -1,4 +1,4 @@
-package model;
+package good.morning.model;
 
 /**
  * !!!The Task class is set to be renamed as Thought!!!

@@ -14,6 +14,14 @@ Words by Steve, words to live by:
 Use it to Live, Learn, Earn and Love. \
 Earning is the only place here that you don't wanna take an L- but even if you do...
 
+### Domain
+
+***It's a day-to-day data day.***
+
+**Quotidian:**
+- of or occurring every day; daily
+- ordinary or everyday, especially when mundane
+
 * * *
 
 ## Features
@@ -60,14 +68,14 @@ Earning is the only place here that you don't wanna take an L- but even if you d
 
 ### Feature Suggestions
 - Multiple packages
-- Class and Interface inheritance 
+- ~~Class and Interface inheritance~~ 
 - Reading and parsing args, environment variables
 - Reading and parsing user input from stdin
 - Reading and parsing files
 
 ### Tech Stack
 - Java 8:
-    - I/O Stream
+    - ~~I/O Stream~~
     - ~~Collections API (Data Structures)~~
     - Multi-threading
 - ~~Build Tool: Gradle~~
