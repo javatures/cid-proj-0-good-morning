@@ -167,7 +167,7 @@ public class Display {
                     break;
                 case 5:
                     System.out.println("Ok, making like a tree...");
-                    App.on = false;
+                    TaskDao.exit();
                     break;
             }
         } else {
@@ -206,9 +206,17 @@ public class Display {
                     break;
                 case 2:
                     TaskDao.rethink();
+                    break;
                 case 3:
+                    TaskDao.forget();
+                    break;
                 case 4:
+                    Display.thinkMenu();
+                    break;
                 case 5:
+                    System.out.println("Leafing!");
+                    TaskDao.exit();
+                    break;
             }
         } else {
             System.out.println("Invalid choice... bye!");

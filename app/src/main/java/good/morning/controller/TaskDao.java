@@ -11,6 +11,7 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import good.morning.App;
 import good.morning.model.Task;
 import good.morning.view.Display;
 
@@ -174,8 +175,12 @@ public class TaskDao implements Dao<Task> {
         return bottomLine;
     }
 
-    public List<Task> headspace() {
+    public static List<Task> headspace() {
+
+        logger.info("Dispalying headspace");
+
         try {
+            logger.info("Executing database query");
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks;");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -212,7 +217,9 @@ public class TaskDao implements Dao<Task> {
             System.out.println();
             System.out.println(new String(footer));
             System.out.println("");
+            logger.info("Database query executed successfully");
         } catch (SQLException e) {
+            logger.error("Error while executing database query");
             e.printStackTrace();
         }
         return headspace;
@@ -310,11 +317,13 @@ public class TaskDao implements Dao<Task> {
         return topOfMind;
     }
 
-    public static void rethink() {
+    public static void rethink() throws Exception {
 
         logger.info("Rethinking a thought");
 
         try {
+
+            logger.info("Executing database update");
 
             System.out.println("What's the ID of the thought to rethink?");
             System.out.println();
@@ -334,21 +343,34 @@ public class TaskDao implements Dao<Task> {
 
             System.out.println("Affected rows: " + rowCount);
 
-            userInput.close();
-
+            // userInput.close();
+            logger.info("Database update executed sucessfully");
+            Display.thinkMenu();
         } catch (SQLException e) {
+            logger.error("Error while executing database update: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
-    public void forget(int id) {
+    public static void forget() {
+
+        logger.info("Forgetting a thought");
+
         try {
-            PreparedStatement preparedStatement = connection
-                    .prepareStatement("SELECT * FROM tasks WHERE id = " + id + ";");
+            logger.info("Executing database query");
+
+            TaskDao.headspace();
+
+            System.out.println("What's the ID of the thought to forget?");
+            System.out.println();
+            int id = userInput.nextInt();
+
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks WHERE id = " + id + ";");
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 id = resultSet.getInt("id");
+                userInput.nextLine();
                 String context = resultSet.getString("context");
                 String name = resultSet.getString("name");
                 String priority = resultSet.getString("priority");
@@ -363,11 +385,12 @@ public class TaskDao implements Dao<Task> {
 
                 System.out.println("");
                 System.out.println("Yes/No");
-                Scanner userInput = new Scanner(System.in);
-                switch (userInput.toString()) {
+                String yesNoConfirm;
+                yesNoConfirm = userInput.nextLine();
+                switch (yesNoConfirm) {
                 case "Yes":
-                    PreparedStatement preparedStatement2 = connection
-                            .prepareStatement("DELETE FROM tasks WHERE id = " + id + ";");
+                    logger.info("Executing database update");
+                    PreparedStatement preparedStatement2 = connection.prepareStatement("DELETE FROM tasks WHERE id = " + id + ";");
                     preparedStatement2.executeUpdate();
                     System.out.println("Forgotten!");
                     break;
@@ -376,11 +399,14 @@ public class TaskDao implements Dao<Task> {
                     break;
                 default:
                     System.out.println("Huh? Hmm... let's forget forgetting!");
+                    break;
                 }
-                userInput.close();
+                // userInput.close();
+                logger.info("Database update executed successfully");
             }
-
+            Display.thinkMenu();
         } catch (Exception e) {
+            logger.error("Error while executing database update: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -395,13 +421,62 @@ public class TaskDao implements Dao<Task> {
             
             System.out.println("What frame of mind are we in?");
             System.out.println();
-            String newTaskContext = userInput.nextLine();
+            System.out.println("[1] LIVE: Things you gotta do!");
+            System.out.println("[2] LEARN: Things you do to grow!");
+            System.out.println("[3] EARN: Things you have!");
+            System.out.println("[4] LOVE: Things you wanna do!");
+
+            int frameOfMindSelection = userInput.nextInt();
+            String newTaskContext = null;
+            userInput.nextLine();
+            switch(frameOfMindSelection) {
+                case 1:
+                    newTaskContext = "LIVE";
+                    break;
+                case 2:
+                    newTaskContext = "LEARN";
+                    break;
+                case 3:
+                    newTaskContext = "EARN";
+                    break;
+                case 4:
+                    newTaskContext = "LOVE";
+                    break;
+                default:
+                    System.out.println("Hmm...");
+                    Display.thinkMenu();
+                    break;
+            }
+
+            System.out.println();
+            System.out.println("How important is this Thought?");
+            System.out.println();
+            System.out.println("[1] FRONT AND CENTER");
+            System.out.println("[2] TOP OF MIND");
+            System.out.println("[3] not really");
+            int prioritySelection = userInput.nextInt();
+            String newTaskPriority = null;
+            userInput.nextLine();
+            switch(prioritySelection) {
+                case 1:
+                    newTaskPriority = "FRONT AND CENTER";
+                    break;
+                case 2:
+                    newTaskPriority = "TOP OF MIND";
+                    break;
+                case 3:
+                    newTaskPriority = "";
+                    break;
+                default:
+                    System.out.println("Hmm...");
+                    Display.thinkMenu();
+                    break;
+            }
+
             System.out.println();
             System.out.println("What's your Thought?");
             String newTaskName = userInput.nextLine();
-            System.out.println();
-            System.out.println("How important is this Thought?");
-            String newTaskPriority = userInput.nextLine();
+
 
             preparedStatement.setString(1, newTaskContext);
             preparedStatement.setString(2, newTaskName);
@@ -410,7 +485,7 @@ public class TaskDao implements Dao<Task> {
 
             System.out.println("Affected rows: " + rowCount);
 
-            userInput.close();
+            // userInput.close();
             Display.thinkMenu();
             logger.info("Database insert executed successfully");
         } catch (SQLException e) {
@@ -445,7 +520,7 @@ public class TaskDao implements Dao<Task> {
 
             System.out.println("Affected rows: " + rowCount);
 
-            userInput.close();
+            // userInput.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -466,6 +541,10 @@ public class TaskDao implements Dao<Task> {
     public List<Task> getAll() {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    public static void exit() {
+        App.on = false;
     }
 
 }
