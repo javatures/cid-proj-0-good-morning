@@ -157,6 +157,7 @@ public class Display {
         if(framesOfMind.contains(thinkMenuSelection)) {
             switch(thinkMenuSelection) {
                 case 1:
+                    TaskDao.ghud();
                     Display.doMenu();
                     break;
                 case 2:
@@ -191,7 +192,7 @@ public class Display {
 
         logger.info("Displaying do menu");
 
-        TaskDao.ghud();
+        // TaskDao.ghud();
 
         System.out.println("Ah, yes- let's gather our Thoughts!");
         System.out.println("How should we tidy up?");
@@ -257,8 +258,6 @@ public class Display {
         Display.thinkMenu();
 
     }
-
-
 
 
 }

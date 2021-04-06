@@ -106,6 +106,7 @@ public class TaskDao implements Dao<Task> {
 
         try {
             logger.info("Executing database query");
+            frontAndCenter.clear();
             PreparedStatement preparedStatement = connection
                     .prepareStatement("SELECT * FROM tasks WHERE priority LIKE 'FRONT AND CENTER';");
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -118,21 +119,57 @@ public class TaskDao implements Dao<Task> {
                 Task task = new Task(id, context, name, priority);
                 frontAndCenter.add(task);
             }
-            String header = "FRONT AND CENTER:";
-            System.out.println(header);
-            System.out.println("");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println("Headspace: Front And Center");
+            System.out.println("---");
+            System.out.println("This is what you're working on- your infinite sticky note.");
+            System.out.println("Brief to-do list, reminder, bolts of lightning from brainstorms...");
+            System.out.println("---");
+            System.out.println();
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "", "frame of", "", "");
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "id", "mind", "location", "thought");
+            System.out.println();
+            System.out.println();
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println("*************************************************************************************************");
+            System.out.println();
+            System.out.println();
 
-            frontAndCenter.forEach(task -> System.out.println(task.getName()));
-            System.out.println("");
+            // frontAndCenter.forEach(task -> System.out.println(task.getName()));
+            for (Task task : frontAndCenter) {
+                if (task.getPriority().equals("FRONT AND CENTER")) {
+                    System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                    System.out.println();
+                }
+            }
+            
+            System.out.println();
+            System.out.println();
+            System.out.println("*************************************************************************************************");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
 
-            byte[] headerAsByteArray = header.getBytes();
-            byte[] footer = new byte[headerAsByteArray.length];
-
-            for (int i = 0; i < headerAsByteArray.length; i++)
-                footer[i] = headerAsByteArray[headerAsByteArray.length - i - 1];
-            System.out.println(new String(footer));
-            System.out.println("");
-            Display.doMenu();
+            // Display.doMenu();
             logger.info("Database query executed successfully");
         } catch (SQLException e) {
             logger.error("Error while executing database query: " + e.getMessage());
@@ -155,20 +192,53 @@ public class TaskDao implements Dao<Task> {
                 Task task = new Task(id, context, name, priority);
                 bottomLine.add(task);
             }
-            String header = "BOTTOM LINE:";
-            System.out.println(header);
-            System.out.println("");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println("Headspace: Bottom Line");
+            System.out.println("---");
+            System.out.println("This is what it ALL amounts to- where we transcend into the Heartspace.");
+            System.out.println("A question to ask yourself quotidiously...");
+            System.out.println("---");
+            System.out.println();
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "", "frame of", "", "");
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "id", "mind", "location", "thought");
+            System.out.println();
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println();
 
-            bottomLine.forEach(task -> System.out.println(task.getName()));
-            System.out.println("");
+            for (Task task : bottomLine) {
+                if (task.getPriority().equals("BOTTOM LINE")) {
+                    System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                    System.out.println();
+                }
+            }
 
-            byte[] headerAsByteArray = header.getBytes();
-            byte[] footer = new byte[headerAsByteArray.length];
+            System.out.println();
+            System.out.println();
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
 
-            for (int i = 0; i < headerAsByteArray.length; i++)
-                footer[i] = headerAsByteArray[headerAsByteArray.length - i - 1];
-            System.out.println(new String(footer));
-            System.out.println("");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -244,30 +314,77 @@ public class TaskDao implements Dao<Task> {
                 headspace.add(task);
             }
             System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
             System.out.println("ghuD: Headspace");
-            System.out.println("");
-            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "id", "frame", "priority", "name");
+            System.out.println("---");
+            System.out.println("This is what is on your mind- the only thing worth managing.");
+            System.out.println("Organize your thoughts, clear your head, repeat...");
+            System.out.println("---");
+            System.out.println();
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "", "frame of", "", "");
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "id", "mind", "location", "thought");
+            System.out.println();
             System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
             System.out.println();
             
             for (Task task : headspace) {
                 if (task.getPriority().equals("TOP OF MIND")) {
                     System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                    System.out.println();
                 }
             }
 
             System.out.println();
+            System.out.println();
             System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println("*************************************************************************************************");
+            System.out.println();
             System.out.println();
 
             for (Task task : headspace) {
-                if (task.getPriority() == "FRONT AND CENTER") {
+                if (task.getPriority().equals("FRONT AND CENTER")) {
                     System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                    System.out.println();
                 }
             }
             System.out.println();
+            System.out.println();
+            System.out.println("*************************************************************************************************");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println();
+
+            for (Task task : headspace) {
+                if (task.getPriority().equals("BOTTOM LINE")) {
+                    System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                    System.out.println();
+                }
+            }
+            System.out.println();
+            System.out.println();
             System.out.println("-------------------------------------------------------------------------------------------------");
             System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
             System.out.println();
 
             // Display.doMenu();
@@ -297,20 +414,53 @@ public class TaskDao implements Dao<Task> {
                 topOfMind.add(task);
             }
 
-            System.out.println("TOP OF MIND:");
-            System.out.println("");
-
-            System.out.println("-------------------------------------------------------------------------------------------------");
-            System.out.printf("%-5.5s %-10.10s %-100.100s", "id", "frame", "name");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println("Headspace: Top Of Mind");
+            System.out.println("---");
+            System.out.println("This is what you hope to remember today- your random access memory.");
+            System.out.println("Daily habits, important dates, put the toilet seat down...");
+            System.out.println("---");
+            System.out.println();
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "", "frame of", "", "");
+            System.out.println();
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "id", "mind", "location", "thought");
             System.out.println();
             System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
             System.out.println();
 
-            for(Task task : topOfMind) {
-                System.out.printf("%-5.5s %-10.10s %-100.100s", task.getId(), task.getContext(), task.getName());
-                System.out.println();
+            for (Task task : topOfMind) {
+                if (task.getPriority().equals("TOP OF MIND")) {
+                    System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                    System.out.println();
+                }
             }
-            Display.thinkMenuLogic();
+
+            System.out.println();
+            System.out.println();
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            // Display.thinkMenuLogic();
             logger.info("Database query executed successfully"); 
         } catch (SQLException e) {
             logger.error("Error while executing database query" + e.getMessage());
