@@ -10,6 +10,7 @@ CREATE TABLE tasks (
     name text NOT NULL,
     priority TEXT CHECK (
         (priority = 'TOP OF MIND') or
+        (priority = 'FRONT AND CENTER') or
         (priority = '')
     )
 );

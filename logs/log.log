@@ -4,3 +4,48 @@
 [INFO ] 2021-04-05 14:00:07.015 [main] App - Retrieved database properties successfully
 [INFO ] 2021-04-05 14:00:07.015 [main] App - Loaded database properties successfully
 [INFO ] 2021-04-05 14:00:07.016 [main] App - Establishing database connection
+[INFO ] 2021-04-05 14:55:16.534 [main] App - Retrieving database properties
+[INFO ] 2021-04-05 14:55:16.536 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-05 14:55:16.537 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-05 14:55:16.537 [main] App - Establishing database connection
+[INFO ] 2021-04-05 15:01:36.851 [main] App - Retrieving database properties
+[INFO ] 2021-04-05 15:01:36.853 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-05 15:01:36.854 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-05 15:01:36.854 [main] App - Establishing database connection
+[INFO ] 2021-04-05 15:01:36.918 [main] Display - Displaying welcome sequence
+[INFO ] 2021-04-05 15:01:36.921 [main] Display - Displaying yes-to-continue
+[INFO ] 2021-04-05 15:01:48.409 [main] Display - Displaying welcome sequence
+[INFO ] 2021-04-05 16:04:40.953 [main] App - Retrieving database properties
+[INFO ] 2021-04-05 16:04:40.956 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-05 16:04:40.956 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-05 16:04:40.956 [main] App - Establishing database connection
+[INFO ] 2021-04-05 16:04:41.017 [main] App - Starting program
+[INFO ] 2021-04-05 16:04:41.018 [main] Display - Displaying mode menu
+[INFO ] 2021-04-05 16:04:41.019 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-05 16:04:44.976 [main] Display - Displaying presentation
+[INFO ] 2021-04-05 16:04:44.978 [main] Display - Displaying yes-to-continue
+[INFO ] 2021-04-05 16:04:51.715 [main] App - Retrieving database properties
+[INFO ] 2021-04-05 16:04:51.718 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-05 16:04:51.718 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-05 16:04:51.718 [main] App - Establishing database connection
+[INFO ] 2021-04-05 16:04:51.781 [main] App - Starting program
+[INFO ] 2021-04-05 16:04:51.782 [main] Display - Displaying mode menu
+[INFO ] 2021-04-05 16:04:51.783 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-05 16:04:52.685 [main] Display - Displaying think menu
+[INFO ] 2021-04-05 16:04:52.688 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-05 16:04:57.317 [main] Display - Displaying presentation
+[INFO ] 2021-04-05 16:04:57.319 [main] Display - Displaying yes-to-continue
+[INFO ] 2021-04-05 19:03:21.851 [main] App - Retrieving database properties
+[INFO ] 2021-04-05 19:03:21.854 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-05 19:03:21.855 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-05 19:03:21.855 [main] App - Establishing database connection
+[INFO ] 2021-04-05 19:03:21.928 [main] App - Starting program
+[INFO ] 2021-04-05 19:03:21.930 [main] Display - Displaying mode menu
+[INFO ] 2021-04-05 19:03:21.931 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-05 19:03:24.329 [main] Display - Displaying think menu
+[INFO ] 2021-04-05 19:03:24.331 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-05 19:03:26.206 [main] TaskDao - Displaying front and center frame of mind
+[INFO ] 2021-04-05 19:03:26.206 [main] TaskDao - Executing database query
+[INFO ] 2021-04-05 19:03:26.222 [main] Display - Displaying do menu
+[INFO ] 2021-04-05 19:03:31.956 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-05 19:03:31.956 [main] TaskDao - Executing database insert
