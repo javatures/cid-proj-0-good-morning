@@ -23,8 +23,11 @@ public class App {
     static InputStream inputStream;
     public static Scanner userInput = new Scanner(System.in);
     public static Logger logger = LogManager.getLogger(App.class);
+    public static boolean on = true;
 
     public static void main(String[] args) {
+
+        logger.info("Starting program setup");
 
         try {
 
@@ -51,167 +54,26 @@ public class App {
                     properties.getProperty("password"));
             TaskDao taskDao = new TaskDao(connection);
 
-            // boolean on = true;
-            // while (on) {
+            while (on) {
 
-                logger.info("Starting program");
+                logger.info("Starting program execution");
                 System.out.println("***");
                 System.out.println("Program starting... oh ghuD");
                 System.out.println("");
 
                 Display.modeMenu();
 
-
-
-            //     Display.welcome();
-            //     Display.yesToContinue();
-            //     int yesToContinueSelection = userInput.nextInt();
-            //     selection.yesToContinueLogic(yesToContinueSelection);
-            //     switch (yesToContinueSelection) {
-            //     case 1:
-            //         Display.modeMenu();
-            //         int displayModeMenuSelection = userInput.nextInt();
-            //         switch (displayModeMenuSelection) {
-            //         case 1:
-            //             taskDao.topOfMind();
-            //             break;
-            //         case 2:
-            //             Display.presentation();
-            //             Display.yesToContinue();
-            //             yesToContinueSelection = userInput.nextInt();
-            //             switch (yesToContinueSelection) {
-            //             case 1:
-            //                 taskDao.topOfMind();
-            //                 displayThinkMenu();
-            //                 int thinkMenuSelection = userInput.nextInt();
-            //                 switch (thinkMenuSelection) {
-            //                 case 1:
-            //                     taskDao.headspace();
-            //                     break;
-            //                 case 2:
-            //                     taskDao.frontAndCenter();
-            //                     break;
-            //                 case 3:
-            //                     taskDao.sideNote();
-            //                     break;
-            //                 case 4:
-            //                     taskDao.backBurner();
-            //                     break;
-            //                 case 5:
-            //                     taskDao.bottomLine();
-            //                     break;
-            //                 case 6:
-            //                     displayDoMenu();
-            //                     int doMenuSelection = userInput.nextInt();
-            //                     switch (doMenuSelection) {
-            //                     case 1:
-            //                         taskDao.insert();
-            //                         taskDao.headspace();
-            //                         break;
-            //                     case 2:
-            //                         System.out.println("What are we rethinking?");
-            //                         int id;
-            //                         System.out.println("Enter ID: ");
-            //                         id = userInput.nextInt();
-            //                         taskDao.rethink(id);
-            //                     }
-            //                     break;
-            //                 case 7:
-            //                     on = false;
-            //                 default:
-            //                     System.out.println("Hmm... should we start over?");
-            //                     Display.yesToContinue();
-            //                     yesToContinueSelection = userInput.nextInt();
-            //                     switch (yesToContinueSelection) {
-            //                     case 1:
-            //                         Display.welcome();
-            //                         break;
-            //                     case 2:
-            //                         on = false;
-            //                         break;
-            //                     default:
-            //                         on = false;
-            //                     }
-            //                 }
-            //                 break;
-            //             case 2:
-            //                 on = false;
-            //             default:
-            //                 System.out.println("Hmm... should we start over?");
-            //                 Display.yesToContinue();
-            //                 yesToContinueSelection = userInput.nextInt();
-            //                 switch (yesToContinueSelection) {
-            //                 case 1:
-            //                     Display.welcome();
-            //                     break;
-            //                 case 2:
-            //                     on = false;
-            //                     break;
-            //                 default:
-            //                     on = false;
-            //                 }
-            //             }
-            //             break;
-            //         case 3:
-            //             on = false;
-            //         default:
-            //             System.out.println("Hmm... should we start over?");
-            //             Display.yesToContinue();
-            //             yesToContinueSelection = userInput.nextInt();
-            //             switch (yesToContinueSelection) {
-            //             case 1:
-            //                 Display.welcome();
-            //                 break;
-            //             case 2:
-            //                 on = false;
-            //                 break;
-            //             default:
-            //                 on = false;
-            //             }
-            //         }
-            //         break;
-            //     case 2:
-            //         on = false;
-            //     default:
-            //         System.out.println("Hmm... should we start over?");
-            //         Display.yesToContinue();
-            //         yesToContinueSelection = userInput.nextInt();
-            //         switch (yesToContinueSelection) {
-            //         case 1:
-            //             Display.welcome();
-            //             break;
-            //         case 2:
-            //             on = false;
-            //             break;
-            //         default:
-            //             on = false;
-            //         }
-            //     }
-            // }
-
-            // on = false;
-
-            // displayGhud();
-            // displayGhudMenu();
-            // displaySelectToContinue();
-
-            // taskDao.headspace();
-            // // taskDao.bottomLine();
-            // // taskDao.sideNote();
-            // // taskDao.frontAndCenter();
-            // // taskDao.backBurner();
-            // // taskDao.topOfMind();
-
-            // } catch(SQLException e) {
-            // e.printStackTrace();
-            // }
-
+            }
             userInput.close();
 
             System.out.println("");
             System.out.println("Program ending...");
             System.out.println("***");
+            logger.info("Program executed successfully");
 
-        } catch (Exception e) {}
+        } catch (Exception e) {
+            logger.error("Error while executing program: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }

@@ -7,6 +7,7 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import good.morning.App;
 import good.morning.controller.TaskDao;
 
 public class Display {
@@ -18,7 +19,7 @@ public class Display {
 
         logger.info("Displaying welcome sequence");
 
-        long sleepDuration = 0;
+        long sleepDuration = 50;
 
         System.out.println("Thank you for checking out this ghuD!");
         Thread.sleep(sleepDuration);
@@ -114,10 +115,12 @@ public class Display {
                     break;
                 case 2:
                     Display.presentation();
-                    Display.yesToContinue();
+                    // Display.yesToContinue();
                     break;
                 case 3:
                     System.out.println("See ya!");
+                    App.on = false;
+                    break;
             }
         } else {
             logger.error("Invalid choice");
@@ -135,11 +138,9 @@ public class Display {
         System.out.println();
         System.out.println("[1] Front And Center");
         System.out.println("[2] Top Of Mind");
-        System.out.println("[3] Learning");
-        System.out.println("[4] Earning");
-        System.out.println("[5] Love");
-        System.out.println("[6] Doing something...");
-        System.out.println("[7] Leaving!");
+        System.out.println("[3] Ghud");
+        System.out.println("[4] Doing...");
+        System.out.println("[5] Leaving!");
 
         Display.thinkMenuLogic();
     }
@@ -159,14 +160,14 @@ public class Display {
                     TaskDao.topOfMind();
                     break;
                 case 3:
+                    TaskDao.ghud();
                     break;
                 case 4:
+                    Display.doMenu();
                     break;
                 case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
+                    System.out.println("Ok, making like a tree...");
+                    App.on = false;
                     break;
             }
         } else {
@@ -185,7 +186,7 @@ public class Display {
         System.out.println("[1] Add a Thought");
         System.out.println("[2] Revisit a Thought");
         System.out.println("[3] Forget a Thought");
-        System.out.println("[4] Think about something...");
+        System.out.println("[4] Let's think...");
         System.out.println("[5] Make like a tree!");
 
         Display.doMenuLogic();
@@ -204,10 +205,11 @@ public class Display {
                     TaskDao.add();
                     break;
                 case 2:
+                    TaskDao.rethink();
                 case 3:
                 case 4:
                 case 5:
-            } Display.thinkMenu();
+            }
         } else {
             System.out.println("Invalid choice... bye!");
             logger.error("Invalid choice");
@@ -217,7 +219,11 @@ public class Display {
 
     }
 
-    public static void presentation() {
+    public static void presentation() throws Exception {
+
+        logger.info("Displaying welcome");
+
+        Display.welcome();
 
         logger.info("Displaying presentation");
 
@@ -226,6 +232,8 @@ public class Display {
         System.out.println("Feature Suggestions");
         System.out.println("Tech Stack");
         System.out.println("Ending");
+
+        Display.thinkMenu();
 
     }
 

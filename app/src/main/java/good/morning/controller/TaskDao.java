@@ -20,7 +20,7 @@ public class TaskDao implements Dao<Task> {
     static Logger logger = LogManager.getLogger(TaskDao.class);
     static Scanner userInput = new Scanner(System.in);
 
-    List<Task> headspace = new ArrayList<>();
+    static List<Task> headspace = new ArrayList<>();
     List<Task> bottomLine = new ArrayList<>();
     List<Task> sideNote = new ArrayList<>();
     static List<Task> frontAndCenter = new ArrayList<>();
@@ -218,8 +218,12 @@ public class TaskDao implements Dao<Task> {
         return headspace;
     }
 
-    public List<Task> getGhud() {
+    public static List<Task> ghud() throws Exception {
+
+        logger.info("Displaying ghud frame of mind");
+
         try {
+            logger.info("Executing database query");
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks;");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -257,7 +261,10 @@ public class TaskDao implements Dao<Task> {
             System.out.println();
             System.out.println(new String(footer));
             System.out.println("");
+            Display.doMenu();
+            logger.info("Database query executed successfully");
         } catch (SQLException e) {
+            logger.info("Error while executing database query");
             e.printStackTrace();
         }
         return headspace;
@@ -303,12 +310,21 @@ public class TaskDao implements Dao<Task> {
         return topOfMind;
     }
 
-    public void rethink(int id) {
+    public static void rethink() {
+
+        logger.info("Rethinking a thought");
+
         try {
+
+            System.out.println("What's the ID of the thought to rethink?");
+            System.out.println();
+            int id = userInput.nextInt();
+
+
             PreparedStatement preparedStatement = connection
                     .prepareStatement("UPDATE tasks SET name = ? WHERE id = " + id + ";");
 
-            Scanner userInput = new Scanner(System.in);
+            // Scanner userInput = new Scanner(System.in);
 
             System.out.println("Rethinking record: " + id);
             System.out.println("What is the new thought?");
@@ -451,4 +467,5 @@ public class TaskDao implements Dao<Task> {
         // TODO Auto-generated method stub
         return null;
     }
+
 }
