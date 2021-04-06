@@ -5,23 +5,20 @@ CREATE TABLE tasks (
         (context = 'LEARN') or 
         (context = 'EARN') or 
         (context = 'LOVE') or
-        (context = '')
+        (context = 'ALL')
     ),
     name text NOT NULL,
     priority TEXT CHECK (
         (priority = 'TOP OF MIND') or
         (priority = 'FRONT AND CENTER') or
-        (priority = '')
+        (priority = 'BOTTOM LINE')
     )
 );
 
 INSERT INTO tasks (context,name,priority)
     VALUES 
-        ('LIVE','Personal Task (not pressing)',''),
-        ('LIVE','Personal Task','TOP OF MIND'),
-        ('LEARN','Work Task (not pressing)',''),
-        ('LEARN','Work Task','TOP OF MIND'),
-        ('EARN','Financial Task (not pressing)',''),
-        ('EARN','Financial Task','TOP OF MIND'),
-        ('LOVE','Enlightenment Task (not pressing)',''),
-        ('LOVE','Enlightenment Task','TOP OF MIND');
+        ('LIVE','Run daily!','TOP OF MIND'),
+        ('LOVE','Quality time with family/friends','TOP OF MIND'),
+        ('LEARN','Revature: Project 0','TOP OF MIND'),
+        ('EARN','Taxes...','TOP OF MIND'),
+        ('ALL','How PRESENT were you today?','BOTTOM LINE');

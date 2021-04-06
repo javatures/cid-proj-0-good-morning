@@ -22,7 +22,7 @@ public class TaskDao implements Dao<Task> {
     static Scanner userInput = new Scanner(System.in);
 
     static List<Task> headspace = new ArrayList<>();
-    List<Task> bottomLine = new ArrayList<>();
+    static List<Task> bottomLine = new ArrayList<>();
     List<Task> sideNote = new ArrayList<>();
     static List<Task> frontAndCenter = new ArrayList<>();
     List<Task> backBurner = new ArrayList<>();
@@ -141,10 +141,10 @@ public class TaskDao implements Dao<Task> {
         return frontAndCenter;
     }
 
-    public List<Task> bottomLine() {
+    public static List<Task> bottomLine() {
         try {
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("SELECT * FROM tasks WHERE context LIKE 'LOVE';");
+                    .prepareStatement("SELECT * FROM tasks WHERE priority LIKE 'BOTTOM LINE' ORDER BY context DESC;");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
@@ -231,7 +231,8 @@ public class TaskDao implements Dao<Task> {
 
         try {
             logger.info("Executing database query");
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks;");
+            headspace.clear();
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks ORDER BY priority DESC, context DESC;");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
@@ -242,33 +243,34 @@ public class TaskDao implements Dao<Task> {
                 Task task = new Task(id, context, name, priority);
                 headspace.add(task);
             }
-            String header = "ghuD:";
-            System.out.println(header);
+            System.out.println();
+            System.out.println("ghuD: Headspace");
             System.out.println("");
-
+            System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", "id", "frame", "priority", "name");
             System.out.println("-------------------------------------------------------------------------------------------------");
-            System.out.printf("%-5.5s %-10.10s %-20.20s %-100.100s", "id", "frame", "priority", "name");
+            System.out.println();
+            
+            for (Task task : headspace) {
+                if (task.getPriority().equals("TOP OF MIND")) {
+                    System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                }
+            }
+
             System.out.println();
             System.out.println("-------------------------------------------------------------------------------------------------");
             System.out.println();
 
             for (Task task : headspace) {
-                System.out.format("%-5.5s %-10.10s %-20.20s %-100.100s", task.getId(),
-                        task.getContext(), task.getPriority(), task.getName());
-                System.out.println();
+                if (task.getPriority() == "FRONT AND CENTER") {
+                    System.out.format("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                }
             }
-            System.out.println("");
-            System.out.println("-------------------------------------------------------------------------------------------------");
-            byte[] headerAsByteArray = header.getBytes();
-            byte[] footer = new byte[headerAsByteArray.length];
-            System.out.println("-------------------------------------------------------------------------------------------------");
-
-            for (int i = 0; i < headerAsByteArray.length; i++)
-                footer[i] = headerAsByteArray[headerAsByteArray.length - i - 1];
             System.out.println();
-            System.out.println(new String(footer));
-            System.out.println("");
-            Display.doMenu();
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println("-------------------------------------------------------------------------------------------------");
+            System.out.println();
+
+            // Display.doMenu();
             logger.info("Database query executed successfully");
         } catch (SQLException e) {
             logger.info("Error while executing database query");
@@ -283,7 +285,7 @@ public class TaskDao implements Dao<Task> {
 
         try {
             logger.info("Executing database query");
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks WHERE priority LIKE 'TOP OF MIND';");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM tasks WHERE priority LIKE 'TOP OF MIND' ORDER BY context DESC;");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
@@ -308,7 +310,7 @@ public class TaskDao implements Dao<Task> {
                 System.out.printf("%-5.5s %-10.10s %-100.100s", task.getId(), task.getContext(), task.getName());
                 System.out.println();
             }
-            Display.thinkMenu();
+            Display.thinkMenuLogic();
             logger.info("Database query executed successfully"); 
         } catch (SQLException e) {
             logger.error("Error while executing database query" + e.getMessage());
@@ -328,6 +330,7 @@ public class TaskDao implements Dao<Task> {
             System.out.println("What's the ID of the thought to rethink?");
             System.out.println();
             int id = userInput.nextInt();
+            userInput.nextLine();
 
 
             PreparedStatement preparedStatement = connection
@@ -359,7 +362,7 @@ public class TaskDao implements Dao<Task> {
         try {
             logger.info("Executing database query");
 
-            TaskDao.headspace();
+            TaskDao.ghud();
 
             System.out.println("What's the ID of the thought to forget?");
             System.out.println();
@@ -421,26 +424,30 @@ public class TaskDao implements Dao<Task> {
             
             System.out.println("What frame of mind are we in?");
             System.out.println();
-            System.out.println("[1] LIVE: Things you gotta do!");
-            System.out.println("[2] LEARN: Things you do to grow!");
-            System.out.println("[3] EARN: Things you have!");
-            System.out.println("[4] LOVE: Things you wanna do!");
+            System.out.println("[1] LOVE: Things you wanna do!");
+            System.out.println("[2] LIVE: Things you gotta do!");
+            System.out.println("[3] LEARN: Things you do to grow!");
+            System.out.println("[4] EARN: Things you have!");
+            System.out.println("[5] ALL: All the things!");
 
             int frameOfMindSelection = userInput.nextInt();
             String newTaskContext = null;
             userInput.nextLine();
             switch(frameOfMindSelection) {
                 case 1:
-                    newTaskContext = "LIVE";
+                    newTaskContext = "LOVE";
                     break;
                 case 2:
-                    newTaskContext = "LEARN";
+                    newTaskContext = "LIVE";
                     break;
                 case 3:
-                    newTaskContext = "EARN";
+                    newTaskContext = "LEARN";
                     break;
                 case 4:
-                    newTaskContext = "LOVE";
+                    newTaskContext = "EARN";
+                    break;
+                case 5:
+                    newTaskContext = "ALL";
                     break;
                 default:
                     System.out.println("Hmm...");
@@ -449,41 +456,46 @@ public class TaskDao implements Dao<Task> {
             }
 
             System.out.println();
-            System.out.println("How important is this Thought?");
+            System.out.println("Where should we keep this Thought?");
             System.out.println();
-            System.out.println("[1] FRONT AND CENTER");
-            System.out.println("[2] TOP OF MIND");
-            System.out.println("[3] not really");
+            System.out.println("[1] TOP OF MIND");
+            System.out.println("[2] FRONT AND CENTER");
+            System.out.println("[3] BOTTOM LINE");
+            System.out.println();
             int prioritySelection = userInput.nextInt();
             String newTaskPriority = null;
             userInput.nextLine();
             switch(prioritySelection) {
                 case 1:
-                    newTaskPriority = "FRONT AND CENTER";
-                    break;
-                case 2:
                     newTaskPriority = "TOP OF MIND";
                     break;
+                case 2:
+                    newTaskPriority = "FRONT AND CENTER";
+                    break;
                 case 3:
-                    newTaskPriority = "";
+                    newTaskPriority = "BOTTOM LINE";
                     break;
                 default:
+                    System.out.println();
                     System.out.println("Hmm...");
+                    System.out.println();
                     Display.thinkMenu();
                     break;
             }
 
             System.out.println();
             System.out.println("What's your Thought?");
+            System.out.println();
             String newTaskName = userInput.nextLine();
-
 
             preparedStatement.setString(1, newTaskContext);
             preparedStatement.setString(2, newTaskName);
             preparedStatement.setString(3, newTaskPriority);
             int rowCount = preparedStatement.executeUpdate();
 
+            System.out.println();
             System.out.println("Affected rows: " + rowCount);
+            System.out.println();
 
             // userInput.close();
             Display.thinkMenu();

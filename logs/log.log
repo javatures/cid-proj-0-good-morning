@@ -442,3 +442,894 @@
 [INFO ] 2021-04-05 23:24:05.194 [main] Display - Displaying think menu logic
 [INFO ] 2021-04-05 23:24:15.090 [main] TaskDao - Database insert executed successfully
 [INFO ] 2021-04-05 23:24:15.091 [main] App - Program executed successfully
+[INFO ] 2021-04-05 23:26:47.083 [main] App - Starting program setup
+[INFO ] 2021-04-05 23:26:47.085 [main] App - Retrieving database properties
+[INFO ] 2021-04-05 23:26:47.085 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-05 23:26:47.085 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-05 23:26:47.085 [main] App - Establishing database connection
+[INFO ] 2021-04-05 23:26:47.139 [main] App - Starting program execution
+[INFO ] 2021-04-05 23:26:47.140 [main] Display - Displaying mode menu
+[INFO ] 2021-04-05 23:26:47.141 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-05 23:26:47.904 [main] Display - Displaying think menu
+[INFO ] 2021-04-05 23:26:47.905 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-05 23:26:52.211 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-05 23:26:52.211 [main] TaskDao - Executing database query
+[INFO ] 2021-04-05 23:26:52.258 [main] Display - Displaying do menu
+[ERROR] 2021-04-05 23:43:17.273 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 10:15:20.627 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:15:20.629 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:15:20.633 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:15:20.633 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:15:20.633 [main] App - Establishing database connection
+[ERROR] 2021-04-06 10:15:22.672 [main] App - Error while executing program: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[INFO ] 2021-04-06 10:17:08.451 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:17:08.454 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:17:08.454 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:17:08.454 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:17:08.455 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:17:08.534 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:17:08.542 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:17:08.542 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:18:11.867 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:18:11.869 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:18:11.869 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:18:11.869 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:18:11.869 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:18:11.926 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:18:11.927 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:18:11.927 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:18:25.295 [main] Display - Displaying welcome
+[INFO ] 2021-04-06 10:18:25.295 [main] Display - Displaying welcome sequence
+[INFO ] 2021-04-06 10:18:26.599 [main] Display - Displaying presentation
+[INFO ] 2021-04-06 10:18:26.601 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:18:26.602 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:22:47.068 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:22:47.068 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:22:47.124 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:25:01.480 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 10:25:01.480 [main] TaskDao - Executing database insert
+[INFO ] 2021-04-06 10:25:58.789 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:25:58.790 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:26:04.078 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:26:04.078 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:26:04.143 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:26:55.737 [main] TaskDao - Rethinking a thought
+[INFO ] 2021-04-06 10:26:55.737 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 10:26:58.800 [main] TaskDao - Database update executed sucessfully
+[INFO ] 2021-04-06 10:26:58.800 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:26:58.801 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:27:26.754 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:27:26.754 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:27:26.844 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:27:29.523 [main] TaskDao - Forgetting a thought
+[INFO ] 2021-04-06 10:27:29.523 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:27:29.523 [main] TaskDao - Dispalying headspace
+[INFO ] 2021-04-06 10:27:29.523 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:27:29.584 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:27:43.821 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 10:27:43.824 [main] TaskDao - Database update executed successfully
+[INFO ] 2021-04-06 10:27:43.824 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:27:43.825 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:27:47.330 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:27:47.330 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:27:47.330 [main] TaskDao - Database insert executed successfully
+[INFO ] 2021-04-06 10:27:47.331 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:27:47.331 [main] App - Program executed successfully
+[INFO ] 2021-04-06 10:47:47.234 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:47:47.236 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:47:47.237 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:47:47.237 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:47:47.237 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:47:47.296 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:47:47.298 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:47:47.299 [main] Display - Displaying mode menu logic
+[ERROR] 2021-04-06 10:47:49.683 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 10:47:58.277 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:47:58.279 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:47:58.279 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:47:58.280 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:47:58.280 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:47:58.340 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:47:58.341 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:47:58.342 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:48:01.492 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:48:01.493 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:48:05.816 [main] Display - Displaying do menu
+[ERROR] 2021-04-06 10:48:10.769 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 10:50:05.213 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:50:05.215 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:50:05.215 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:50:05.215 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:50:05.215 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:50:05.273 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:50:05.274 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:50:05.274 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:50:16.376 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:50:16.378 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:50:19.866 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:19.866 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:19.866 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:19.913 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:19.913 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:19.913 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:19.972 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:19.972 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:19.973 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:20.057 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:20.057 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:20.058 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:20.161 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:20.161 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:20.161 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:20.288 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:20.289 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:20.289 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:20.439 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:20.439 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:20.439 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:20.616 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:20.616 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:20.616 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:20.827 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:20.827 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:20.827 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:21.057 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:21.057 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:21.057 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:21.307 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:21.308 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:21.308 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:21.585 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:21.585 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:21.585 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:21.898 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:21.898 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:21.898 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:50:22.215 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:50:22.215 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:50:22.215 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:51:14.412 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:51:14.414 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:51:14.414 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:51:14.414 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:51:14.414 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:51:14.471 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:51:14.472 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:51:14.473 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:51:15.357 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:51:15.359 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:51:16.478 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:51:16.478 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:51:16.478 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:51:16.528 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:51:16.530 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 10:51:28.363 [main] TaskDao - Rethinking a thought
+[INFO ] 2021-04-06 10:51:28.363 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 10:51:30.438 [main] TaskDao - Database update executed sucessfully
+[INFO ] 2021-04-06 10:51:30.438 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:51:30.439 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 10:52:03.256 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 10:52:16.835 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:52:16.837 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:52:16.837 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:52:16.838 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:52:16.838 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:52:16.894 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:52:16.895 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:52:16.896 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:52:17.748 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:52:17.750 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:52:19.243 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:52:19.243 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:52:19.243 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:52:19.293 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:52:19.293 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 10:52:21.828 [main] TaskDao - Rethinking a thought
+[INFO ] 2021-04-06 10:52:21.828 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 10:52:29.137 [main] TaskDao - Database update executed sucessfully
+[INFO ] 2021-04-06 10:52:29.137 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:52:29.138 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:52:52.447 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:52:52.447 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:52:52.507 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:52:52.507 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:52:52.507 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:52:52.508 [main] Display - Displaying mode menu logic
+[ERROR] 2021-04-06 10:53:01.904 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 10:56:43.874 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:56:43.876 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:56:43.876 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:56:43.876 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:56:43.876 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:56:43.931 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:56:43.933 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:56:43.933 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:56:44.729 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:56:44.731 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 10:56:49.704 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 10:57:28.027 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:57:28.029 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:57:28.029 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:57:28.029 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:57:28.029 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:57:28.086 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:57:28.088 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:57:28.088 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:57:28.719 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:57:28.721 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 10:57:41.996 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 10:58:25.554 [main] App - Starting program setup
+[INFO ] 2021-04-06 10:58:25.556 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 10:58:25.556 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 10:58:25.556 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 10:58:25.556 [main] App - Establishing database connection
+[INFO ] 2021-04-06 10:58:25.614 [main] App - Starting program execution
+[INFO ] 2021-04-06 10:58:25.615 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 10:58:25.616 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 10:58:26.554 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:58:26.554 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:58:26.602 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:58:26.602 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 10:58:26.603 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 10:58:44.853 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 10:58:44.853 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 10:58:44.853 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 10:58:44.914 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 10:58:44.915 [main] Display - Displaying do menu logic
+[ERROR] 2021-04-06 10:59:00.103 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 11:00:03.641 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:00:03.643 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:00:03.643 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:00:03.644 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:00:03.644 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:00:03.701 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:00:03.702 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:00:03.703 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:00:04.465 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:00:04.465 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:00:04.513 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:00:04.513 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:00:04.514 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:00:08.497 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:00:08.497 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:00:08.557 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:00:08.557 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:00:08.557 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:00:08.557 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:00:08.641 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:00:08.642 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:00:26.560 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 11:00:26.560 [main] TaskDao - Executing database insert
+[INFO ] 2021-04-06 11:00:53.911 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:00:53.912 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:00:56.608 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:00:56.608 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:00:56.608 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:00:56.725 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:00:56.726 [main] Display - Displaying do menu logic
+[ERROR] 2021-04-06 11:01:04.012 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 11:12:17.126 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:12:17.128 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:12:17.128 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:12:17.128 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:12:17.128 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:12:17.183 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:12:17.184 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:12:17.185 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:12:18.496 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:12:18.496 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:12:18.529 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:12:18.529 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:12:18.530 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:12:32.251 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:12:32.251 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:12:32.284 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:12:32.284 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:12:32.284 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:12:32.284 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:12:32.329 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:12:32.330 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:12:34.297 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:12:34.300 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:12:37.376 [main] App - Program executed successfully
+[INFO ] 2021-04-06 11:13:15.335 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:13:15.337 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:13:15.337 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:13:15.337 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:13:15.337 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:13:15.395 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:13:15.396 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:13:15.397 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:13:16.353 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:16.354 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:16.388 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:16.388 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:13:16.388 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:16.388 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:16.419 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:16.420 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:13:17.342 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:17.342 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:17.391 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:17.391 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:13:17.391 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:17.391 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:17.449 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:17.450 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:13:19.478 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:13:19.478 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:19.478 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:19.552 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:19.553 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:13:21.558 [main] TaskDao - Displaying top of mind
+[INFO ] 2021-04-06 11:13:21.558 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:21.572 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:13:21.572 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:21.572 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:21.649 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:21.650 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:13:30.959 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:30.959 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:31.049 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:31.049 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:13:31.049 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:13:31.049 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:13:31.149 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:13:31.149 [main] Display - Displaying do menu logic
+[ERROR] 2021-04-06 11:13:38.085 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 11:15:44.773 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:15:44.775 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:15:44.775 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:15:44.775 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:15:44.775 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:15:44.831 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:15:44.832 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:15:44.833 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:15:45.481 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:15:45.481 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:15:45.513 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:15:45.513 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:15:45.513 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:15:45.513 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:15:45.544 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:15:45.545 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:15:51.201 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:15:51.201 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:15:51.247 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:15:51.247 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:15:51.247 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:15:51.247 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:15:51.301 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:15:51.302 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:16:08.858 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 11:16:08.858 [main] TaskDao - Executing database insert
+[ERROR] 2021-04-06 11:16:13.734 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 11:17:17.552 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:17:17.555 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:17:17.555 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:17:17.555 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:17:17.555 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:17:17.620 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:17:17.621 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:17:17.622 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:17:18.560 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:17:18.560 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:17:18.593 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:17:18.593 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:17:18.593 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:17:18.593 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:17:18.611 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:17:18.612 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:17:23.185 [main] App - Program executed successfully
+[INFO ] 2021-04-06 11:17:31.356 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:17:31.358 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:17:31.359 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:17:31.359 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:17:31.359 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:17:31.423 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:17:31.425 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:17:31.425 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:17:32.308 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:17:32.309 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:17:32.342 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:17:32.342 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:17:32.343 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:17:32.343 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:17:32.360 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:17:32.361 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 11:17:38.198 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 11:18:14.459 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:18:14.462 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:18:14.462 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:18:14.462 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:18:14.462 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:18:14.519 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:18:14.527 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:18:14.528 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:18:16.271 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:18:16.271 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:18:16.271 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:18:16.305 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:18:16.306 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:18:18.973 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:18:18.973 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:18:18.994 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:18:18.994 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:18:18.995 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:18:18.995 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:18:19.018 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:18:19.019 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:18:24.736 [main] App - Program executed successfully
+[INFO ] 2021-04-06 11:20:35.858 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:20:35.860 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:20:35.860 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:20:35.860 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:20:35.860 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:20:35.918 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:20:35.920 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:20:35.920 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:20:36.722 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:20:36.722 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:20:36.722 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:20:36.759 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:20:36.761 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:20:37.797 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:20:37.797 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:20:37.798 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:20:37.817 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:20:37.818 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:20:45.405 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 11:20:45.406 [main] TaskDao - Executing database insert
+[INFO ] 2021-04-06 11:21:04.990 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:21:04.990 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:21:04.990 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:21:05.010 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:21:05.011 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:21:12.415 [main] TaskDao - Database insert executed successfully
+[INFO ] 2021-04-06 11:21:12.417 [main] App - Program executed successfully
+[INFO ] 2021-04-06 11:50:26.378 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:50:26.380 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:50:26.380 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:50:26.380 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:50:26.380 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:50:26.435 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:50:26.437 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:50:26.437 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:50:31.459 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:50:31.459 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:50:31.459 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:50:31.493 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:50:31.495 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:50:36.569 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:50:36.570 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:50:36.570 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:50:36.590 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:50:36.591 [main] Display - Displaying do menu logic
+[ERROR] 2021-04-06 11:50:41.316 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 11:50:46.745 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:50:46.746 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:50:46.747 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:50:46.747 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:50:46.747 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:50:46.801 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:50:46.803 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:50:46.804 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:50:48.536 [main] Display - Displaying welcome
+[INFO ] 2021-04-06 11:50:48.536 [main] Display - Displaying welcome sequence
+[INFO ] 2021-04-06 11:50:49.849 [main] Display - Displaying presentation
+[INFO ] 2021-04-06 11:50:49.851 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:50:49.851 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:50:49.852 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:50:49.887 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:50:49.888 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:50:53.739 [main] App - Program executed successfully
+[INFO ] 2021-04-06 11:59:12.550 [main] App - Starting program setup
+[INFO ] 2021-04-06 11:59:12.552 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 11:59:12.552 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 11:59:12.552 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 11:59:12.552 [main] App - Establishing database connection
+[INFO ] 2021-04-06 11:59:12.610 [main] App - Starting program execution
+[INFO ] 2021-04-06 11:59:12.611 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 11:59:12.612 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 11:59:13.854 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:59:13.854 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:13.854 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:13.888 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:13.889 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:59:16.101 [main] TaskDao - Displaying top of mind
+[INFO ] 2021-04-06 11:59:16.101 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:16.116 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:59:16.116 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:16.116 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:16.138 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:16.139 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:59:22.201 [main] TaskDao - Displaying front and center frame of mind
+[INFO ] 2021-04-06 11:59:22.201 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:22.204 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:59:22.204 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:22.204 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:22.225 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:22.226 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:59:27.223 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:59:27.223 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:27.223 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:27.245 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:27.246 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:59:28.390 [main] TaskDao - Displaying top of mind
+[INFO ] 2021-04-06 11:59:28.390 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:28.414 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:59:28.414 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:28.414 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:28.434 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:28.435 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:59:33.710 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:59:33.711 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:33.711 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:33.731 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:33.732 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 11:59:37.970 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 11:59:37.970 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:37.970 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:37.989 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:37.990 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 11:59:39.967 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:39.967 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 11:59:39.967 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 11:59:39.967 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 11:59:39.986 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 11:59:39.987 [main] Display - Displaying do menu logic
+[ERROR] 2021-04-06 12:00:14.475 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 12:07:14.744 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:07:14.746 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:07:14.746 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:07:14.746 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:07:14.746 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:07:14.806 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:07:14.807 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:07:14.808 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:07:18.972 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:07:18.972 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:07:18.972 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:07:19.015 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:07:19.016 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:07:27.801 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:07:27.801 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:07:27.801 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:07:27.821 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:07:27.822 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:07:30.683 [main] TaskDao - Rethinking a thought
+[INFO ] 2021-04-06 12:07:30.684 [main] TaskDao - Executing database update
+[ERROR] 2021-04-06 12:07:55.427 [main] App - Error while executing program: No line found
+[INFO ] 2021-04-06 12:07:59.209 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:07:59.212 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:07:59.212 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:07:59.213 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:07:59.213 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:07:59.270 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:07:59.271 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:07:59.272 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:08:00.840 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:08:00.840 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:08:00.840 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:00.874 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:08:00.875 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:08:03.456 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:08:03.456 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:08:03.456 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:03.477 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:08:03.478 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:08:04.879 [main] TaskDao - Rethinking a thought
+[INFO ] 2021-04-06 12:08:04.879 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 12:08:18.355 [main] TaskDao - Database update executed sucessfully
+[INFO ] 2021-04-06 12:08:18.355 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:08:18.355 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:08:18.355 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:18.377 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:08:18.378 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:08:22.199 [main] TaskDao - Displaying front and center frame of mind
+[INFO ] 2021-04-06 12:08:22.199 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:22.203 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:08:22.203 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:08:22.203 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:22.225 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:08:22.225 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:08:25.265 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 12:08:25.265 [main] TaskDao - Executing database insert
+[ERROR] 2021-04-06 12:08:30.077 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 12:08:33.762 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:08:33.764 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:08:33.764 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:08:33.764 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:08:33.764 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:08:33.826 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:08:33.827 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:08:33.827 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:08:48.286 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:08:48.286 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:08:48.286 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:48.324 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:08:48.325 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:08:54.496 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:08:54.496 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:08:54.496 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:54.519 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:08:54.520 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:08:56.040 [main] TaskDao - Forgetting a thought
+[INFO ] 2021-04-06 12:08:56.040 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:56.040 [main] TaskDao - Dispalying headspace
+[INFO ] 2021-04-06 12:08:56.040 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:08:56.061 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:09:20.824 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 12:09:20.829 [main] TaskDao - Database update executed successfully
+[INFO ] 2021-04-06 12:09:20.829 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:09:20.829 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:09:20.829 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:09:20.847 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:09:20.848 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:09:29.037 [main] App - Program executed successfully
+[INFO ] 2021-04-06 12:11:20.354 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:11:20.357 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:11:20.357 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:11:20.357 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:11:20.357 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:11:20.418 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:11:20.419 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:11:20.421 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:11:27.559 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:11:27.559 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:11:27.559 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:11:27.594 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:11:27.595 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:11:29.124 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:11:29.124 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:11:29.124 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:11:29.142 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:11:29.144 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:11:31.595 [main] TaskDao - Forgetting a thought
+[INFO ] 2021-04-06 12:11:31.595 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:11:31.595 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:11:31.595 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:11:31.613 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:11:45.951 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 12:11:45.957 [main] TaskDao - Database update executed successfully
+[INFO ] 2021-04-06 12:11:45.957 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:11:45.957 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:11:45.957 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:11:45.972 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:11:45.973 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:11:50.831 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:11:50.832 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:11:50.832 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:11:50.848 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:11:50.849 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:11:53.406 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 12:11:53.406 [main] TaskDao - Executing database insert
+[ERROR] 2021-04-06 12:12:00.809 [main] TaskDao - Error while executing database update: null
+[INFO ] 2021-04-06 12:14:42.053 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:14:42.055 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:14:42.055 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:14:42.055 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:14:42.055 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:14:42.114 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:14:42.115 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:14:42.116 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:14:42.714 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:14:42.714 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:14:42.714 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:14:42.746 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:14:42.748 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 12:16:24.263 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 12:16:28.757 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:16:28.759 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:16:28.759 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:16:28.759 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:16:28.759 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:16:28.816 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:16:28.817 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:16:28.818 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:16:29.551 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:16:29.551 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:16:29.551 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:16:29.582 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:16:29.583 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:16:34.954 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:16:34.954 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:16:34.954 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:16:34.975 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:16:34.976 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:16:38.923 [main] TaskDao - Rethinking a thought
+[INFO ] 2021-04-06 12:16:38.923 [main] TaskDao - Executing database update
+[INFO ] 2021-04-06 12:16:51.337 [main] TaskDao - Database update executed sucessfully
+[INFO ] 2021-04-06 12:16:51.337 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:16:51.337 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:16:51.337 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:16:51.352 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:16:51.352 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:17:00.628 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:17:00.628 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:17:00.628 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:17:00.647 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:17:00.648 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:17:03.638 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 12:17:03.638 [main] TaskDao - Executing database insert
+[INFO ] 2021-04-06 12:17:10.942 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:17:10.942 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:17:10.942 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:17:10.959 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:17:10.960 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 12:17:56.473 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 12:18:00.350 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:18:00.352 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:18:00.352 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:18:00.352 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:18:00.352 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:18:00.409 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:18:00.410 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:18:00.411 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:18:01.341 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:18:01.341 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:18:01.341 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:18:01.371 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:18:01.372 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:18:05.060 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:18:05.061 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:18:05.061 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:18:05.079 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:18:05.080 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:18:06.032 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 12:18:06.032 [main] TaskDao - Executing database insert
+[INFO ] 2021-04-06 12:18:21.231 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:18:21.231 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:18:21.231 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:18:21.248 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:18:21.249 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:18:29.486 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:18:29.486 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:18:29.486 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:18:29.505 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:18:29.507 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:18:30.482 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 12:18:30.483 [main] TaskDao - Executing database insert
+[INFO ] 2021-04-06 12:18:50.472 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:18:50.472 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:18:50.472 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:18:50.492 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:18:50.492 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 12:19:20.312 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 12:23:30.525 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:23:30.528 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:23:30.528 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:23:30.528 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:23:30.528 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:23:30.590 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:23:30.591 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:23:30.591 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:23:33.046 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:23:33.046 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:23:33.046 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:23:33.077 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:23:33.078 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 12:23:40.138 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 12:33:23.443 [main] App - Starting program setup
+[INFO ] 2021-04-06 12:33:23.445 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 12:33:23.445 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 12:33:23.445 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 12:33:23.445 [main] App - Establishing database connection
+[INFO ] 2021-04-06 12:33:23.505 [main] App - Starting program execution
+[INFO ] 2021-04-06 12:33:23.506 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 12:33:23.506 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 12:33:25.929 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:33:25.929 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:33:25.929 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:33:25.960 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:33:25.961 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:34:06.738 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 12:34:06.738 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:34:06.738 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:34:06.757 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:34:06.758 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 12:34:14.812 [main] TaskDao - Adding thought to headspace
+[INFO ] 2021-04-06 12:34:14.812 [main] TaskDao - Executing database insert
+[INFO ] 2021-04-06 12:34:36.642 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 12:34:36.642 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 12:34:36.642 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 12:34:36.665 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 12:34:36.666 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 12:34:48.773 [main] TaskDao - Database insert executed successfully
+[INFO ] 2021-04-06 12:34:48.774 [main] App - Program executed successfully
+[INFO ] 2021-04-06 14:11:04.663 [main] App - Starting program setup
+[INFO ] 2021-04-06 14:11:04.666 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 14:11:04.666 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 14:11:04.666 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 14:11:04.666 [main] App - Establishing database connection
+[INFO ] 2021-04-06 14:11:04.726 [main] App - Starting program execution
+[INFO ] 2021-04-06 14:11:04.727 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 14:11:04.728 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 14:11:07.168 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 14:11:07.168 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:11:07.168 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:11:07.203 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:11:07.203 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 14:11:10.225 [main] TaskDao - Displaying top of mind
+[INFO ] 2021-04-06 14:11:10.225 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:11:10.241 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 14:11:10.241 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:11:10.241 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:11:10.261 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:11:10.263 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 14:11:19.172 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:11:19.173 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 14:11:19.173 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:11:19.173 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:11:19.196 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:11:19.197 [main] Display - Displaying do menu logic
+[ERROR] 2021-04-06 14:12:22.293 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 14:12:27.615 [main] App - Starting program setup
+[INFO ] 2021-04-06 14:12:27.616 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 14:12:27.617 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 14:12:27.617 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 14:12:27.617 [main] App - Establishing database connection
+[INFO ] 2021-04-06 14:12:27.674 [main] App - Starting program execution
+[INFO ] 2021-04-06 14:12:27.675 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 14:12:27.676 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 14:12:28.389 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 14:12:28.389 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:12:28.389 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:12:28.430 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:12:28.431 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 14:12:29.753 [main] TaskDao - Displaying top of mind
+[INFO ] 2021-04-06 14:12:29.753 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:12:29.770 [main] Display - Displaying think menu logic
+[ERROR] 2021-04-06 14:12:55.629 [main] App - Error while executing program: null
+[INFO ] 2021-04-06 14:24:19.975 [main] App - Starting program setup
+[INFO ] 2021-04-06 14:24:19.977 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 14:24:19.978 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 14:24:19.978 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 14:24:19.978 [main] App - Establishing database connection
+[INFO ] 2021-04-06 14:24:20.034 [main] App - Starting program execution
+[INFO ] 2021-04-06 14:24:20.035 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 14:24:20.036 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 14:24:20.943 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 14:24:20.943 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:24:20.944 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:24:20.962 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:24:20.963 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 14:24:30.844 [main] App - Program executed successfully
+[INFO ] 2021-04-06 14:25:11.031 [main] App - Starting program setup
+[INFO ] 2021-04-06 14:25:11.032 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 14:25:11.033 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 14:25:11.033 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 14:25:11.033 [main] App - Establishing database connection
+[INFO ] 2021-04-06 14:25:11.092 [main] App - Starting program execution
+[INFO ] 2021-04-06 14:25:11.094 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 14:25:11.095 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 14:25:12.043 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 14:25:12.044 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:25:12.044 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:25:12.062 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:25:12.064 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 14:25:13.689 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 14:25:13.689 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:25:13.689 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:25:13.698 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:25:13.699 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 14:25:17.985 [main] App - Program executed successfully
+[INFO ] 2021-04-06 14:27:38.903 [main] App - Starting program setup
+[INFO ] 2021-04-06 14:27:38.905 [main] App - Retrieving database properties
+[INFO ] 2021-04-06 14:27:38.905 [main] App - Retrieved database properties successfully
+[INFO ] 2021-04-06 14:27:38.905 [main] App - Loaded database properties successfully
+[INFO ] 2021-04-06 14:27:38.906 [main] App - Establishing database connection
+[INFO ] 2021-04-06 14:27:38.962 [main] App - Starting program execution
+[INFO ] 2021-04-06 14:27:38.963 [main] Display - Displaying mode menu
+[INFO ] 2021-04-06 14:27:38.963 [main] Display - Displaying mode menu logic
+[INFO ] 2021-04-06 14:27:39.468 [main] Display - Displaying think menu
+[INFO ] 2021-04-06 14:27:39.469 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:27:39.469 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:27:39.500 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:27:39.501 [main] Display - Displaying think menu logic
+[INFO ] 2021-04-06 14:27:40.456 [main] Display - Displaying do menu
+[INFO ] 2021-04-06 14:27:40.456 [main] TaskDao - Displaying ghud frame of mind
+[INFO ] 2021-04-06 14:27:40.456 [main] TaskDao - Executing database query
+[INFO ] 2021-04-06 14:27:40.475 [main] TaskDao - Database query executed successfully
+[INFO ] 2021-04-06 14:27:40.476 [main] Display - Displaying do menu logic
+[INFO ] 2021-04-06 14:27:47.698 [main] App - Program executed successfully

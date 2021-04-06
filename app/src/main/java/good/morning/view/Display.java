@@ -133,19 +133,22 @@ public class Display {
 
         logger.info("Displaying think menu");
 
+        TaskDao.ghud();
+
         System.out.println("Okay- let's think!");
-        System.out.println("What Frame Of Mind are we in?");
+        System.out.println("What should we think about?");
         System.out.println();
-        System.out.println("[1] Front And Center");
+        System.out.println("[1] Everything ghuD");
         System.out.println("[2] Top Of Mind");
-        System.out.println("[3] Ghud");
-        System.out.println("[4] Doing...");
-        System.out.println("[5] Leaving!");
+        System.out.println("[3] Front And Center");
+        System.out.println("[4] Bottom Line");
+        System.out.println("[5] Doing...");
+        System.out.println("[6] Leaving!");
 
         Display.thinkMenuLogic();
     }
 
-    private static void thinkMenuLogic() throws Exception {
+    public static void thinkMenuLogic() throws Exception {
 
         logger.info("Displaying think menu logic");
 
@@ -154,18 +157,24 @@ public class Display {
         if(framesOfMind.contains(thinkMenuSelection)) {
             switch(thinkMenuSelection) {
                 case 1:
-                    TaskDao.frontAndCenter();
+                    Display.doMenu();
                     break;
                 case 2:
                     TaskDao.topOfMind();
+                    Display.doMenu();
                     break;
                 case 3:
-                    TaskDao.ghud();
+                    TaskDao.frontAndCenter();
+                    Display.doMenu();
                     break;
                 case 4:
+                    TaskDao.bottomLine();
                     Display.doMenu();
                     break;
                 case 5:
+                    Display.doMenu();
+                    break;
+                case 6:
                     System.out.println("Ok, making like a tree...");
                     TaskDao.exit();
                     break;
@@ -180,11 +189,15 @@ public class Display {
 
     public static void doMenu() throws Exception {
 
+        logger.info("Displaying do menu");
+
+        TaskDao.ghud();
+
         System.out.println("Ah, yes- let's gather our Thoughts!");
         System.out.println("How should we tidy up?");
         System.out.println();
         System.out.println("[1] Add a Thought");
-        System.out.println("[2] Revisit a Thought");
+        System.out.println("[2] Rethink a Thought");
         System.out.println("[3] Forget a Thought");
         System.out.println("[4] Let's think...");
         System.out.println("[5] Make like a tree!");
@@ -195,7 +208,7 @@ public class Display {
 
     private static void doMenuLogic() throws Exception {
 
-        logger.info("Displaying do menu");
+        logger.info("Displaying do menu logic");
 
         List<Integer> laundryList = Arrays.asList(1,2,3,4,5);
         int doMenuSelection = userInput.nextInt();
