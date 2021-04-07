@@ -177,7 +177,7 @@ public class Display {
                     break;
                 case 6:
                     System.out.println("Ok, making like a tree...");
-                    TaskDao.exit();
+                    App.exit();
                     break;
             }
         } else {
@@ -229,7 +229,7 @@ public class Display {
                     break;
                 case 5:
                     System.out.println("Leafing!");
-                    TaskDao.exit();
+                    App.exit();
                     break;
             }
         } else {

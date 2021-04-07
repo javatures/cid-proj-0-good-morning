@@ -76,4 +76,8 @@ public class App {
             e.printStackTrace();
         }
     }
+
+    public static void exit() {
+        App.on = false;
+    }
 }
