@@ -464,6 +464,7 @@ public class TaskDao implements Dao<Task> {
                 System.out.println();
                 System.out.println("-------------------------------------------------------------------------------------------------");
                 System.out.printf("%-5.5s %-10.10s %-30.30s %-100.100s", task.getId(), task.getContext(), task.getPriority(), task.getName());
+                System.out.println();
                 System.out.println("-------------------------------------------------------------------------------------------------");
                 System.out.println();
                 System.out.println();

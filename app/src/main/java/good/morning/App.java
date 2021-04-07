@@ -55,20 +55,25 @@ public class App {
             TaskDao taskDao = new TaskDao(connection);
 
             while (on) {
-
                 logger.info("Starting program execution");
+                System.out.println();
                 System.out.println("***");
-                System.out.println("Program starting... oh ghuD");
-                System.out.println("");
+                System.out.println("Program starting...");
+                System.out.println();
+                System.out.println("oh ghuD!");
+                System.out.println();
 
                 Display.modeMenu();
 
             }
             userInput.close();
 
-            System.out.println("");
+            System.out.println();
+            System.out.println("glad that's all cleared up!");
+            System.out.println();
             System.out.println("Program ending...");
             System.out.println("***");
+            System.out.println();
             logger.info("Program executed successfully");
 
         } catch (Exception e) {

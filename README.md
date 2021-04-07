@@ -1,13 +1,14 @@
 # Project 0: ghuD Morning
 
-***Every great day starts with a ghuD Morning***
+A productivity app that gets you in, out and about- that's it!
 
-- **A Java CLI (command-line interface) application.**
-- **Operated by user input**
+- **A Java CLI (command-line interface) application**
 - **Persisted by PostgreSQL**
 - **Managed by Git**
 
 ## TLDR
+
+***Every great day starts with a ghuD Morning***
 
 **ghuD:** "Great Heads Up Display"
 **Feels Like:** A task manager app
