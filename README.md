@@ -1,93 +1,63 @@
-# Project 0 In A Nutshell
+# Project 0: ghuD Morning
 
-A young task management program that aspires to one day be a full grown Linux distribution.
+***Every great day starts with a ghuD Morning***
 
-## App: ~~Good~~ Ghud Morning
-Words by Steve, words to live by:
+- **A Java CLI (command-line interface) application.**
+- **Operated by user input**
+- **Persisted by PostgreSQL**
+- **Managed by Git**
 
-***Because every great day starts with a good morning.***
+## TLDR
 
-**Let's have a healthy relationship with technology.**
+**ghuD:** "Great Heads Up Display"
+**Feels Like:** A task manager app
+**Domain:** Quotidian- the day-to-day data... for the day.
+**Objective:** Clarify thoughts, clear mind, repeat...
 
-*keep important things top of mind... but only long enough to clear your head.*
+## ghuD System
 
-Use it to Live, Learn, Earn and Love. \
-Earning is the only place here that you don't wanna take an L- but even if you do...
+Less is less- not more. If anything, less is nothing, and nothing is space- which is a ghuD thing.
 
-### Domain
+The ghuD System encourages presence by honing user focus in on what's presently important- not yesterday or tomorrow, just the present.
 
-***It's a day-to-day data day.***
+Aside from ghuD Morning, there are countless ways to implement the ghuD System in your daily life- most preferably with nothing, followed closely by pen and paper.
 
-**Quotidian:**
-- of or occurring every day; daily
-- ordinary or everyday, especially when mundane
+### ghuD Morning Features
 
-* * *
+ghuD Morning offers users a simple Headspace in which to organize their brain by way of the ghuD System, which relies on the following Locations, Frames Of Mind and Management Tasks.
 
-## Features
-- [ ] Headspace
-  - [x] Assign 1 of 4 Contexts (Live, Learn, Earn, Love)
-  - [x] Create ~~Tasks~~Thoughts    
-  - [x] Insert ~~Task~~ Thought
-    - [ ] Insert 2 or more ~~Tasks~~ Thoughts in one command
-  - [x] Read ~~Tasks~~ Thoughts
-    - [x] Select all ~~Tasks~~ Thoughts
-    - [x] Select ~~Tasks~~ Thoughts by Context
-      - [x] LOVE: Bottom Line
-      - [x] LEARN: Side Note
-      - [x] LIVE: Front And Center
-      - [x] EARN: Back Burner
-  - [x] Update ~~Tasks~~ Thoughts
-    - [x] Update ~~Task~~ Thought name
-    - [x] Update ~~Task~~ Thought context
-  - [ ] Delete ~~Tasks~~ Thoughts
-    - [ ] Delete ~~Task~~ Thought
-  - [ ] Restore ~~Tasks~~ Thoughts
-    - [ ] Restore deleted ~~Task~~ Thought
-- [ ] Steve Assistant
-- [ ] Select Thoughts by Priority
-  - [ ] Top Of Mind
-    - [ ] View Top Of Mind Thoughts
-    - [ ] Restrict Top Of Mind to ONE Thought per Context
+#### Headspace
 
-## Fridge
-- [ ] Version of Steve that only speaks pig latin
-- [ ] ~~good~~ ghud-night (sleep)
-- [ ] ~~good~~ ghud-move (running)
-- [ ] ~~good~~ ghud-call (phonebook)
-- [ ] ~~good~~ ghud-hands (disappearing task force)
-- [ ] ~~good~~ ghud-music (something music-based)
+##### Locations
+- **Top Of Mind:** Good place for daily habits and high priority items
+- **Front And Center:** Virtual workspace/desktop
+- **Bottom Line:** The end-goal
 
-## Per Javatures GitHub Notes Repo
+##### Frames Of Mind
 
-## Project 0
-- ***A Java CLI (command-line interface) application.***
-- ***Data should be parsed from CLI args, or user input, or text files.***
-- ***It may also be output to stdout or to files.***
-- ***The project should be managed by git and well documented.***
+- **Love:** What you want
+- **Live:** What you need
+- **Learn:** How you grow
+- **Earn:** What you have
 
-### Feature Suggestions
-- Multiple packages
-- ~~Class and Interface inheritance~~ 
-- Reading and parsing args, environment variables
-- Reading and parsing user input from stdin
-- Reading and parsing files
+##### Management Tasks:
+
+- **Add:** Add a Thought to your Headspace- not too many though!
+- **Rethink:** Change a Thought
+- **Forget:** Clear your head by removing canceled and completed Thoughts
 
 ### Tech Stack
-- Java 8:
-    - ~~I/O Stream~~
-    - ~~Collections API (Data Structures)~~
-    - Multi-threading
-- ~~Build Tool: Gradle~~
-- Unit Testing: JUnit
-- ~~git & GitHub~~
-- ~~Readme's~~
-- Javadocs
-- ~~PostgreSQL database~~
+- Language: Java 8
+- Build Tool: Gradle
+- Version Control: Git/GitHub
+- Database Management System: PostgreSQL image in Docker container
 
-### Presentation
-- Wednesday of Week 3
-- 5-minute presentation:
-    - Introduction
-    - Live demonstration
-    - Q&A
+### Fridge (Features/Applications For Later)
+
+- Steve (assistant)
+  - Version of Steve that only speaks pig latin
+- ghud-night (sleep)
+- ghud-move (running)
+- ghud-call (phonebook)
+- ghud-hands (disappearing task force)
+- ghud-music (something music-based)
