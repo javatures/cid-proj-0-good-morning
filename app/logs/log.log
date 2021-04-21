@@ -1,0 +1,4 @@
+[INFO ] 2021-04-07 09:02:22.168 [main] App - Starting program setup
+[INFO ] 2021-04-07 09:02:22.172 [main] App - Retrieving database properties
+[ERROR] 2021-04-07 09:02:22.173 [main] App - Error while retrieving database properties: database.properties (The system cannot find the file specified)
+[ERROR] 2021-04-07 09:02:22.174 [main] App - Error while executing program: inStream parameter is null
